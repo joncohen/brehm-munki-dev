@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>jonathan.cohen</string>
+		<key>creation_date</key>
+		<date>2014-04-24T13:09:48Z</date>
+		<key>munki_version</key>
+		<string>1.0.0.1864</string>
+		<key>os_version</key>
+		<string>10.9.2</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>beta</string>
+		<string>production</string>
+		<string>testing</string>	
+	</array>
+	<key>description</key>
+	<string>Avira Free Mac Security packs award-winning malware detection into a smart application that almost never needs your attention. Just install it and continue to enjoy your Mac, free of viruses and free of antivirus hassles too.</string>
+	<key>display_name</key>
+	<string>Avira AntiVirus</string>
+	<key>installed_size</key>
+	<integer>216514</integer>
+	<key>installer_item_hash</key>
+	<string>6e3b20db050eee0b16a9e9157c24cf1ab07eda92bd92ddce40e72824d87adb59</string>
+	<key>installer_item_location</key>
+	<string>apps/user_utilities/Avira_Free_Antivirus_for_Mac-2.0.pkg</string>
+	<key>installer_item_size</key>
+	<integer>144483</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>Avira_Free_Antivirus_for_Mac</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>216514</integer>
+			<key>packageid</key>
+			<string>com.avira.pkg.AviraMacSecurity</string>
+			<key>version</key>
+			<string>2.0</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>2.0</string>
+</dict>
+</plist>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>RestartAction</key>
+	<string>RequireRestart</string>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>jonathan.cohen</string>
+		<key>creation_date</key>
+		<date>2014-07-30T17:20:07Z</date>
+		<key>munki_version</key>
+		<string>1.0.0.1864</string>
+		<key>os_version</key>
+		<string>10.9.4</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Install the applications which make up the TI Connect X suite of tools</string>
+	<key>display_name</key>
+	<string>TI Connect™ X Applications</string>
+	<key>installed_size</key>
+	<integer>21084</integer>
+	<key>installer_item_hash</key>
+	<string>cdc5d1da5f72763c7cd17ef2a8a1596e3b11930b5252df9ddae3f2747887443c</string>
+	<key>installer_item_location</key>
+	<string>apps/user_utilities/ticonnectx-1.6.dmg</string>
+	<key>installer_item_size</key>
+	<integer>7061</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>TI-Connect</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>TI Connect X.pkg</string>
+			<key>installed_size</key>
+			<integer>21084</integer>
+			<key>name</key>
+			<string>TI Connect X Application Installer</string>
+			<key>packageid</key>
+			<string>com.ti.eps.TIConnectX.Application</string>
+			<key>version</key>
+			<string>1.6</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.6</string>
+</dict>
+</plist>

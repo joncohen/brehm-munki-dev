@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Meraki Systems Manager provides cloud-based over-the-air centralized management and diagnostics of the mobile devices managed by your organization.</string>
+	<key>display_name</key>
+	<string>Meraki Client</string>
+	<key>installed_size</key>
+	<integer>810</integer>
+	<key>installer_item_hash</key>
+	<string>4e6b97029db59a32c6dc304b8c7a7db24add30ed61bdd4fbac47d19183a9ddc6</string>
+	<key>installer_item_location</key>
+	<string>apps/IT/MerakiSM-Agent-systems-manager.pkg</string>
+	<key>installer_item_size</key>
+	<integer>494</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>MerakiAgent</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>810</integer>
+			<key>packageid</key>
+			<string>com.meraki.pkg.MerakiAgent</string>
+			<key>version</key>
+			<string>1.0.86</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.0.86</string>
+</dict>
+</plist>

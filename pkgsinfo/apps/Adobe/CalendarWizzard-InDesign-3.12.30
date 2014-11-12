@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>The Adobe InDesign Calendar Wizard is a free, open source, javascript extension to Adobe InDesign which automatically adds calendars to an InDesign document. It's designed to be very flexible in creating calendars, laying out the page, and adding common cell content in such a way that the user can take advantage of the InDesign's features to easily sytlize it.</string>
+	<key>display_name</key>
+	<string>CalendarWizzard-InDesign</string>
+	<key>installed_size</key>
+	<integer>368</integer>
+	<key>installer_item_hash</key>
+	<string>ff000d2f6e368b19420824549a46ba9374ce6a091ce8cf26f67a92df34198002</string>
+	<key>installer_item_location</key>
+	<string>apps/Adobe/CalendarWizzard-InDesign.dmg</string>
+	<key>installer_item_size</key>
+	<integer>72</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>CalendarWizzard-InDesign</string>
+
+	<key>update_for</key>
+		<string>CS5_DesignPremium</string>
+
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>md5checksum</key>
+			<string>e17420800f7722ecddd3564a796e401a</string>
+			<key>path</key>
+			<string>/Applications/Adobe InDesign CS5/Scripts/Scripts Panel/calendarWizard/calendarWizard.js</string>
+			<key>type</key>
+			<string>file</string>
+		</dict>
+	</array>
+
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>CalendarWizzard-InDesign.pkg</string>
+			<key>installed_size</key>
+			<integer>368</integer>
+			<key>name</key>
+			<string>CalendarWizzard-InDesign</string>
+			<key>packageid</key>
+			<string>com.mygreatcompany.pkg.CalendarWizzard-InDesign</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>3.12.30</string>
+</dict>
+</plist>

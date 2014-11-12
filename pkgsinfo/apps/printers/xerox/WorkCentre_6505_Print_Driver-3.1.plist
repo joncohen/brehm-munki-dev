@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>jonathan.cohen</string>
+		<key>creation_date</key>
+		<date>2014-09-10T19:28:13Z</date>
+		<key>munki_version</key>
+		<string>1.0.0.1864</string>
+		<key>os_version</key>
+		<string>10.9.4</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+		<string>production</string>
+
+	</array>
+	<key>description</key>
+	<string>This is the print driver for the Xerox 6505 Series Printer.</string>
+	<key>display_name</key>
+	<string>Xerox WC6505 Printer Driver</string>
+	<key>installed_size</key>
+	<integer>5416</integer>
+	<key>installer_item_hash</key>
+	<string>f1338958bca3c204986caf6673a5965b3bd445f701d9538a29a841090ee31016</string>
+	<key>installer_item_location</key>
+	<string>apps/printers/xerox/WorkCentre_6505_OS_10.9_Print_Installer_v3.1.pkg</string>
+	<key>installer_item_size</key>
+	<integer>8493</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>WorkCentre_6505_Print_Driver</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>5416</integer>
+			<key>packageid</key>
+			<string>com.xerox.print.workcentre6505.print.ps.m107.installer</string>
+			<key>version</key>
+			<string>1</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>3.1</string>
+</dict>
+</plist>

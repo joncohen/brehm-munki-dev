@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string>OS X Drivers for Brother Printers: Released 11-7-12</string>
+	<key>display_name</key>
+	<string>Brother Printer Drivers</string>
+	<key>installed_size</key>
+	<integer>40384</integer>
+	<key>installer_item_hash</key>
+	<string>f3c30ec8f49d874311cee80e5d5f211322e06a36622d74e058fab18aebd711f5</string>
+	<key>installer_item_location</key>
+	<string>apps/printers/brother/BrotherMLDrivers_450.dmg</string>
+	<key>installer_item_size</key>
+	<integer>26666</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>BrotherPrinterDrivers</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>18128</integer>
+			<key>packageid</key>
+			<string>com.brother.brothermldrivers.Library-1.pkg</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>1756</integer>
+			<key>packageid</key>
+			<string>com.brother.brothermldrivers.Library-2.pkg</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>13988</integer>
+			<key>packageid</key>
+			<string>com.brother.brothermldrivers.Library-3.pkg</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>1904</integer>
+			<key>packageid</key>
+			<string>com.brother.brothermldrivers.Library-4.pkg</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>4608</integer>
+			<key>packageid</key>
+			<string>com.brother.brothermldrivers.Library.pkg</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>4.5.0</string>
+</dict>
+</plist>

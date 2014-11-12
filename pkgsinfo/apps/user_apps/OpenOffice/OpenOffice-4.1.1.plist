@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>jonathan.cohen</string>
+		<key>creation_date</key>
+		<date>2014-11-10T19:09:31Z</date>
+		<key>munki_version</key>
+		<string>2.0.1.2253</string>
+		<key>os_version</key>
+		<string>10.9.5</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>autopkg</string>
+	</array>
+	<key>category</key>
+	<string>AutoPkg Development</string>
+	<key>description</key>
+	<string>Apache OpenOffice is the leading open-source office software suite for word processing, spreadsheets, presentations, graphics, databases and more. It is available in many languages and works on all common computers. It stores all your data in an international open standard format and can also read and write files from other common office software packages. It can be downloaded and used completely free of charge for any purpose.</string>
+	<key>display_name</key>
+	<string>Apache OpenOffice</string>
+	<key>installer_item_hash</key>
+	<string>7becbdbe2abbcfd9d27953d2e11dc07da308d80f208b5f27f6213d225dc95e64</string>
+	<key>installer_item_location</key>
+	<string>apps/user_apps/OpenOffice/OpenOffice-4.1.1.dmg</string>
+	<key>installer_item_size</key>
+	<integer>167393</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>org.openoffice.script</string>
+			<key>CFBundleName</key>
+			<string>OpenOffice</string>
+			<key>CFBundleShortVersionString</key>
+			<string>4.1.1</string>
+			<key>minosversion</key>
+			<string>10.7.0</string>
+			<key>path</key>
+			<string>/Applications/OpenOffice.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>OpenOffice.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.7.0</string>
+	<key>name</key>
+	<string>OpenOffice</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>4.1.1</string>
+</dict>
+</plist>

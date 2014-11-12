@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Mavis Beacon Schools Edition - Program with Classroom Tools</string>
+	<key>display_name</key>
+	<string>Mavis Beacon Staff Installer</string>
+	<key>installed_size</key>
+	<integer>728392</integer>
+	<key>installer_item_hash</key>
+	<string>963c62373241b0e895551862d4f1cf814b093244c84bb857edd6e3277ba7e365</string>
+	<key>installer_item_location</key>
+	<string>apps/assistivetech/MavisBeacon-Staff.dmg</string>
+	<key>installer_item_size</key>
+	<integer>575070</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>MavisBeaconStaff</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>MavisBeaconStaff.pkg</string>
+			<key>installed_size</key>
+			<integer>728392</integer>
+			<key>name</key>
+			<string>MavisBeaconStaff</string>
+			<key>packageid</key>
+			<string>com.mygreatcompany.pkg.MavisBeaconStaff</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.mackiev.mavis.school</string>
+			<key>CFBundleName</key>
+			<string>Mavis Beacon</string>
+			<key>CFBundleShortVersionString</key>
+			<string>1.0</string>
+			<key>path</key>
+			<string>/Applications/Mavis Beacon Teaches Typing.app</string>
+			<key>type</key>
+			<string>application</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.mackiev.teacher</string>
+			<key>CFBundleName</key>
+			<string>Classroom Manager</string>
+			<key>CFBundleShortVersionString</key>
+			<string>1.0</string>
+			<key>path</key>
+			<string>/Applications/Mavis Beacon Classroom Manager.app</string>
+			<key>type</key>
+			<string>application</string>
+		</dict>
+	</array>
+
+	<key>postinstall_script</key>
+        <string>#!/bin/sh
+
+         defaults write /Library/Preferences/com.mackiev.global.mavis MBSharedPath /Volumes/MavisBeacon
+
+        exit 0
+        </string>
+
+
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.0</string>
+</dict>
+</plist>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+        <key>autoremove</key>
+        <false/>
+        <key>catalogs</key>
+        <array>
+                <string>testing</string>
+                <string>production</string>
+        </array>
+        <key>description</key>
+        <string>This is a non-package-based installer for the SAC Xerox Printer.  It installs with the Generic Driver flag and requires the installation of the Generic PCL Driver</string>
+        <key>display_name</key>
+        <string>Install SAC 3320 Xerox</string>
+        <key>installer_type</key>
+        <string>nopkg</string>
+        <key>name</key>
+        <string>InstallSAC3320Xerox</string>
+
+        <key>requires</key>
+        <string>Generic_PCLDriver_Installer</string>
+
+	<key>installcheck_script</key>
+	<string>#!/bin/sh
+
+# Based on 2010 Walter Meyer SUNY Purchase College (c)
+# Modified by Nick McSpadden, 2013
+
+# Script to install and setup printers on a Mac OS X system in a "Munki-Friendly" way.
+# Make sure to install the required drivers first!
+
+# Variables. Edit these.
+
+printername="SAC_Xerox_3320"
+location="SAC AV Room"
+gui_display_name="SAC Xerox 3320"
+address="lpd://10.0.17.95"
+driver_ppd="/Library/Printers/PPDs/Contents/Resources/Generic_PCL_OSX.ppd"
+
+# Populate these options if you want to set specific options for the printer. E.g. duplexing installed, etc.
+currentVersion="0.2"
+
+### Determine if receipt is installed ###
+if [ -f /private/etc/cups/deployment/receipts/$printername.plist ]; then
+	storedVersion=`/usr/libexec/PlistBuddy -c "Print :version" /private/etc/cups/deployment/receipts/$printername.plist`
+        echo "Stored version: $storedVersion"
+else
+        storedVersion="0"
+fi
+
+versionComparison=`echo "$storedVersion &lt; $currentVersion" | bc -l`
+
+# This will be 0 if the current receipt is greater than or equal to current version of the script
+
+### Printer Install ###
+# If the queue already exists (returns 0), we don't need to reinstall it.
+if [ $? -eq 0 ]; then
+        if [ $versionComparison == 0 ]; then
+                # We are at the current or greater version
+              exit 1
+        fi
+
+    # We are of lesser version, and therefore we should delete the printer and reinstall.
+	/usr/sbin/lpadmin -x $printername
+exit 0
+
+fi</string>
+
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>postinstall_script</key>
+	<string>#!/bin/sh
+
+# Based on 2010 Walter Meyer SUNY Purchase College (c)
+# Modified by Nick McSpadden, 2013
+
+# Script to install and setup printers on a Mac OS X system in a "Munki-Friendly" way.
+# Make sure to install the required drivers first!
+
+# Variables. Edit these.
+
+printername="SAC_Xerox_3320"
+location="SAC AV Room"
+gui_display_name="SAC Xerox 3320"
+address="lpd://10.0.17.95"
+driver_ppd="/Library/Printers/PPDs/Contents/Resources/Generic_PCL_OSX.ppd"
+
+# Populate these options if you want to set specific options for the printer. E.g. duplexing installed, etc.
+currentVersion="0.2"
+
+### Determine if receipt is installed ###
+if [ -f /private/etc/cups/deployment/receipts/$printername.plist ]; then
+        storedVersion=`/usr/libexec/PlistBuddy -c "Print :version" /private/etc/cups/deployment/receipts/$printername.plist`
+        echo "Stored version: $storedVersion"
+else
+        storedVersion="0"
+fi
+
+versionComparison=`echo "$storedVersion &lt; $currentVersion" | bc -l`
+
+# This will be 0 if the current receipt is greater than or equal to current version of the script
+
+### Printer Install ###
+# If the queue already exists (returns 0), we don't need to reinstall it.
+if [ $? -eq 0 ]; then
+        if [ $versionComparison == 0 ]; then
+                # We are at the current or greater version
+              exit 1
+        fi
+
+    # We are of lesser version, and therefore we should delete the printer and reinstall.
+	/usr/sbin/lpadmin -x $printername
+fi
+
+# Now we can install the printer.
+/usr/sbin/lpadmin \
+        -p "$printername" \
+        -L "$location" \
+        -D "$gui_display_name" \
+        -v "$address" \
+        -P "$driver_ppd" \
+        -o printer-is-shared=false \
+        -o "$option_1" \
+        -o "$option_2" \
+        -o "$option_3" \
+        -o "$option_4" \
+        -o "$option_5" \
+        -o "$option_6" \
+        -E
+# Enable and start the printers on the system (after adding the printer initially it is paused).
+/usr/sbin/cupsenable $(lpstat -p | grep -w "printer" | awk '{print$2}')
+
+# Create a receipt for the printer
+mkdir -p /private/etc/cups/deployment/receipts
+/usr/libexec/PlistBuddy -c "Add :version string" /private/etc/cups/deployment/receipts/$printername.plist
+/usr/libexec/PlistBuddy -c "Set :version $currentVersion" /private/etc/cups/deployment/receipts/$printername.plist
+
+# Permission the directories properly.
+chown -R root:_lp /private/etc/cups/deployment
+chmod -R 700 /private/etc/cups/deployment
+
+exit 0</string>
+
+	<key>uninstall_method</key>
+	<string>uninstall_script</string>
+	<key>uninstall_script</key>
+	<string>#!/bin/sh
+/usr/sbin/lpadmin -x "SAC_Xerox_3320"
+rm -f /private/etc/cups/deployment/receipts/SAC_Xerox_3320.plist</string>
+
+<key>uninstallable</key>
+        <true/>
+        <key>version</key>
+        <string>0.2</string>
+</dict>
+</plist>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>RestartAction</key>
+	<string>RequireRestart</string>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>jonathan.cohen</string>
+		<key>creation_date</key>
+		<date>2014-11-11T22:10:52Z</date>
+		<key>munki_version</key>
+		<string>2.0.1.2253</string>
+		<key>os_version</key>
+		<string>10.9.5</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>beta</string>
+	</array>
+	<key>category</key>
+	<string>System Tools</string>
+	<key>description</key>
+	<string>The OS X Mavericks 10.9.5 update is recommended for all Mavericks users. It improves the stability, compatibility, and security of your Mac.</string>
+	<key>developer</key>
+	<string>Apple</string>
+	<key>display_name</key>
+	<string>OS X Update 10.9.5</string>
+	<key>installed_size</key>
+	<integer>567672</integer>
+	<key>installer_item_hash</key>
+	<string>941cbfb1cd72f5ff61711a9e40f06a18b703b118f9124d75234663b8f29d1dc5</string>
+	<key>installer_item_location</key>
+	<string>apps/apple/os/OSXUpd10.9.5-1.0.0.0.1.1306847324.dmg</string>
+	<key>installer_item_size</key>
+	<integer>269077</integer>
+	<key>minimum_os_version</key>
+	<string>10.9.4</string>
+	<key>name</key>
+	<string>Mavericks-1095-update</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>567672</integer>
+			<key>packageid</key>
+			<string>delta</string>
+			<key>version</key>
+			<string>1.0.0.0.1.1306847324</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.0.0.0.1.1306847324</string>
+</dict>
+</plist>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string>Installer for Generic Printer Drivers in OSX</string>
+	<key>display_name</key>
+	<string>Generic_PCLDriver_Installer</string>
+	<key>installed_size</key>
+	<integer>28</integer>
+	<key>installer_item_hash</key>
+	<string>1499a302cb1fa1d4a1c5e15c76f2ef9989b5f7f31419ebea8af70cc8d7bbd1c5</string>
+	<key>installer_item_location</key>
+	<string>apps/printers/generic/Generic_PCLDriver_Installer.dmg</string>
+	<key>installer_item_size</key>
+	<integer>19</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>Generic_PCLDriver_Installer</string>
+
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>md5checksum</key>
+			<string>57ba938ebad462f3517b312c3d034a5e</string>
+			<key>path</key>
+			<string>/Library/Printers/PPDs/Contents/Resources/Generic_PCL_OSX.ppd</string>
+			<key>type</key>
+			<string>file</string>
+		</dict>
+	</array>
+
+
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>Generic_PCLDriver_Installer.pkg</string>
+			<key>installed_size</key>
+			<integer>28</integer>
+			<key>name</key>
+			<string>Generic_PCLDriver_Installer</string>
+			<key>packageid</key>
+			<string>com.brehm.pkg.Generic_PCLDriver_Installer</string>
+			<key>version</key>
+			<string>0.1</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>/etc/cups/printers_deployment/uninstalls/Generic_PCL_OSX.sh</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>0.1</string>
+</dict>
+</plist>

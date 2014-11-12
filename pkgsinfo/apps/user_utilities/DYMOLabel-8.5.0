@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	
+	<array>
+		<string>testing</string>
+		<string>production</string>
+	</array>
+	<key>category</key>
+		<string>Printers and Scanners</string>
+	<key>description</key>
+	<string>DYMO Label Writer Software for Mac</string>
+	<key>display_name</key>
+	<string>DYMO Label v.8</string>
+	<key>installed_size</key>
+	<integer>160960</integer>
+	<key>installer_item_hash</key>
+	<string>c8786d128d51cb1ad580d69a5ced66f72417ba4ca2f5db1361da9253118b4a6a</string>
+	<key>installer_item_location</key>
+	<string>apps/user_utilities/DLS8Setup.8.5.0.dmg</string>
+	<key>installer_item_size</key>
+	<integer>50590</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>DYMOLabel</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>92248</integer>
+			<key>packageid</key>
+			<string>com.dymo.dls.appsupport</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>2440</integer>
+			<key>packageid</key>
+			<string>com.dymo.cups</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>42928</integer>
+			<key>packageid</key>
+			<string>com.dymo.dls.frameworks</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>1780</integer>
+			<key>packageid</key>
+			<string>com.dymo.dls.documents</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>156</integer>
+			<key>packageid</key>
+			<string>com.dymo.dls.addressbook.addin</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>68</integer>
+			<key>packageid</key>
+			<string>com.dymo.dls.npapi.addin</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>17676</integer>
+			<key>packageid</key>
+			<string>com.dymo.dls.application</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>8.5.0</string>
+</dict>
+</plist>

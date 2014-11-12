@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Adobe Shockwave 11.6 for Macintosh 10.4 platform</string>
+	<key>display_name</key>
+	<string>Adobe Shockwave 11.6</string>
+	<key>installed_size</key>
+	<integer>59444</integer>
+	<key>installer_item_hash</key>
+	<string>2745831c63ac6814a221ccf3d611bf6a3057c2b11e6ac0a5109d14555216c68e</string>
+	<key>installer_item_location</key>
+	<string>apps/Adobe/Shockwave_Installer_Full.dmg</string>
+	<key>installer_item_size</key>
+	<integer>21985</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>Shockwave</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>Shockwave_Installer_Full.pkg</string>
+			<key>installed_size</key>
+			<integer>59444</integer>
+			<key>packageid</key>
+			<string>com.adobe.shockwave</string>
+			<key>version</key>
+			<string>11.6.4r634</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>11.6.4r634</string>
+</dict>
+</plist>

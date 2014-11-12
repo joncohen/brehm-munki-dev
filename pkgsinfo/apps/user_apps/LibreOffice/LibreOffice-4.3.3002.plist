@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>jonathan.cohen</string>
+		<key>creation_date</key>
+		<date>2014-11-10T19:08:48Z</date>
+		<key>munki_version</key>
+		<string>2.0.1.2253</string>
+		<key>os_version</key>
+		<string>10.9.5</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>autopkg</string>
+	</array>
+	<key>category</key>
+	<string>AutoPkg Development</string>
+	<key>description</key>
+	<string>LibreOffice is the free power-packed Open Source personal productivity suite for Windows, Macintosh and Linux, that gives you six feature-rich applications for all your document production and data processing needs: Writer, Calc, Impress, Draw, Math and Base.</string>
+	<key>display_name</key>
+	<string>LibreOffice</string>
+	<key>installer_item_hash</key>
+	<string>3e3e625d4b4bf69dcbe8c0a0b93aa1b8d5c318c74b43f51d3b895d9d43d2a642</string>
+	<key>installer_item_location</key>
+	<string>apps/user_apps/LibreOffice/LibreOffice_4.3.3_MacOS_x86-4.3.3002.dmg</string>
+	<key>installer_item_size</key>
+	<integer>186029</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>org.libreoffice.script</string>
+			<key>CFBundleName</key>
+			<string>LibreOffice</string>
+			<key>CFBundleShortVersionString</key>
+			<string>4.3.3002</string>
+			<key>minosversion</key>
+			<string>10.6.0</string>
+			<key>path</key>
+			<string>/Applications/LibreOffice.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>LibreOffice.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.6.0</string>
+	<key>name</key>
+	<string>LibreOffice</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>unattended_uninstall</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>4.3.3002</string>
+</dict>
+</plist>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string></string>
+	<key>display_name</key>
+	<string>Microsoft® Silverlight™ Browser Plug-In</string>
+	<key>installed_size</key>
+	<integer>99420</integer>
+	<key>installer_item_hash</key>
+	<string>350890084cb0dbba71802678dc1c675d647cd26e64cc87fe191f050ee838ccff</string>
+	<key>installer_item_location</key>
+	<string>apps/microsoft/utilities/Silverlight.dmg</string>
+	<key>installer_item_size</key>
+
+	<integer>14572</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>Silverlight</string>
+
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.microsoft.silverlight.sllauncher</string>
+			<key>CFBundleName</key>
+			<string>Microsoft Silverlight Out-of-Browser Launcher</string>
+			<key>CFBundleShortVersionString</key>
+			<string>1.0</string>
+			<key>path</key>
+			<string>/Library/Application Support/Microsoft/Silverlight/OutOfBrowser/SLLauncher.app</string>
+			<key>type</key>
+			<string>application</string>
+		</dict>
+	</array>
+
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>Silverlight.pkg</string>
+			<key>installed_size</key>
+			<integer>99420</integer>
+			<key>packageid</key>
+			<string>com.microsoft.SilverlightInstaller</string>
+			<key>version</key>
+			<string>5.1.10411.0</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>5.1.10411.0</string>
+</dict>
+</plist>

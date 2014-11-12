@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+        <key>autoremove</key>
+        <false/>
+        <key>catalogs</key>
+        <array>
+                <string>testing</string>
+        </array>
+        <key>description</key>
+        <string>This is a critical software update for Geometer SketchPad</string>
+        <key>display_name</key>
+        <string>Geometer SketchPad Update</string>
+        <key>installer_type</key>
+        <string>nopkg</string>
+        <key>name</key>
+        <string>SketchPad_LicenseUpdate</string>
+
+	<key>installcheck_script</key>
+	<string>#!/bin/sh
+
+# Based on 2010 Walter Meyer SUNY Purchase College (c)
+# Modified by Nick McSpadden, 2013
+
+# Variables. Edit these.
+
+PROGRAM="geometerSketchPad"
+currentVersion="0.1"
+
+### Determine if receipt and Application is installed ###
+if [ -f /brehm/logs/program_receipts/$PROGRAM.plist ]; then
+	storedVersion=`/usr/libexec/PlistBuddy -c "Print :version" /brehm/logs/program_receipts/$PROGRAM.plist`
+        echo "Stored version: $storedVersion"
+else
+        storedVersion="0"
+fi
+
+versionComparison=`echo "$storedVersion &lt; $currentVersion" | bc -l`
+
+# This will be 0 if the current receipt is greater than or equal to current version of the script
+
+### Printer Install ###
+# If the Program has been removed (returns 0), we don't need to reinstall it.
+if [ $? -eq 0 ]; then
+        if [ $versionComparison == 0 ]; then
+                # We are at the current or greater version
+              exit 1
+        fi
+
+    # We are of lesser version, and therefore we should delete the printer and reinstall.
+	
+    /Applications/GSP5.app/Contents/MacOS/GSP5_Rel_KCPT_31_105 -license deregister -name "Brehm Preparatory School" -code 00C7VN-TCHM37-D74BN5-2MZF0D -all_users_only
+    
+exit 0
+
+fi</string>
+
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>postinstall_script</key>
+	<string>#!/bin/sh
+
+# Based on 2010 Walter Meyer SUNY Purchase College (c)
+# Modified by Nick McSpadden, 2013
+
+# Script to install and setup printers on a Mac OS X system in a "Munki-Friendly" way.
+# Make sure to install the required drivers first!
+
+# Variables. Edit these.
+
+PROGRAM="geometerSketchPad"
+currentVersion="0.1"
+
+### Determine if receipt and Application is installed ###
+if [ -f /brehm/logs/program_receipts/$PROGRAM.plist ]; then
+	storedVersion=`/usr/libexec/PlistBuddy -c "Print :version" /brehm/logs/program_receipts/$PROGRAM.plist`
+        echo "Stored version: $storedVersion"
+else
+        storedVersion="0"
+fi
+
+versionComparison=`echo "$storedVersion &lt; $currentVersion" | bc -l`
+
+# This will be 0 if the current receipt is greater than or equal to current version of the script
+
+### Printer Install ###
+# If the Program has been removed (returns 0), we don't need to reinstall it.
+if [ $? -eq 0 ]; then
+        if [ $versionComparison == 0 ]; then
+                # We are at the current or greater version
+              exit 1
+        fi
+
+    # We are of lesser version, and therefore we should delete the printer and reinstall.
+	
+    /Applications/GSP5.app/Contents/MacOS/GSP5_Rel_KCPT_31_105 -license deregister -name "Brehm Preparatory School" -code 00C7VN-TCHM37-D74BN5-2MZF0D -all_users_only   
+fi
+
+# Now we can install the printer.
+ /Applications/GSP5.app/Contents/MacOS/GSP5_Rel_KCPT_31_105 -license deregister -name "Brehm Preparatory School" -code 00C7VN-TCHM37-D74BN5-2MZF0D -all_users_only   
+
+# Create a receipt for the printer
+mkdir -p /brehm/logs/program_receipts
+/usr/libexec/PlistBuddy -c "Add :version string" /brehm/logs/program_receipts/$PROGRAM.plist
+/usr/libexec/PlistBuddy -c "Set :version $currentVersion" /brehm/logs/program_receipts/$PROGRAM.plist
+
+# Permission the directories properly.
+chown -R root:_lp /brehm/logs/program_receipts
+chmod -R 700 /brehm/logs/program_receipts/
+
+exit 0</string>
+
+<key>uninstallable</key>
+        <false/>
+        <key>version</key>
+        <string>0.1</string>
+</dict>
+</plist>
+
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string>Apimac Timer is a complete and professional stopwatch, alarm clock, countdown and clock utility for Mac OS X. Apimac Timer is freeware and gives you the known ease of use of other Apimac Applications.</string>
+	<key>display_name</key>
+	<string>Digital Stopwatch</string>
+	<key>installer_item_hash</key>
+	<string>1c577a0a3cef554014bd0ff60d7fa0667edf70b4ebfe86be91315c08499261cf</string>
+	<key>installer_item_location</key>
+	<string>apps/user_utilities/timer-7.0.0d72.dmg</string>
+	<key>installer_item_size</key>
+	<integer>6111</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apimac.timer</string>
+			<key>CFBundleName</key>
+			<string>Apimac Timer</string>
+			<key>CFBundleShortVersionString</key>
+			<string>Apimac Timer 7.0.0 (build 071)</string>
+			<key>CFBundleVersion</key>
+			<string>7.0.0d72</string>
+			<key>path</key>
+			<string>/Applications/Apimac Timer.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleVersion</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>Apimac Timer.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>Apimac Timer</string>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>7.0.0d72</string>
+</dict>
+</plist>

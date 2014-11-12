@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Software to allow multiple users to project to an Epson PowerLite System</string>
+	<key>display_name</key>
+	<string>EasyMP Multi PC Projection Ver.1.00</string>
+	<key>installed_size</key>
+	<integer>7744</integer>
+	<key>installer_item_hash</key>
+	<string>07fb96ec2d9fcdb3ae11e7d02caa943087739004afa3c60c88007bfab596e8e0</string>
+	<key>installer_item_location</key>
+	<string>apps/epson/epson14142-MultiPC-Projection.dmg</string>
+	<key>installer_item_size</key>
+	<integer>2758</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+
+	<key>maximum_os_version</key>
+		<string>10.6.8</string>
+
+	<key>name</key>
+	<string>Epson_MultiClient_Projection</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>easympMultiPcProjection.pkg</string>
+			<key>installed_size</key>
+			<integer>6960</integer>
+			<key>packageid</key>
+			<string>com.epson.EasyMPMultiPcProjection</string>
+			<key>version</key>
+			<string>1.00</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>epsonprojectormppaudio.pkg</string>
+			<key>installed_size</key>
+			<integer>784</integer>
+			<key>packageid</key>
+			<string>com.epson.EpsonProjectorMPPAudio</string>
+			<key>version</key>
+			<string>1.00</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.00</string>
+</dict>
+</plist>

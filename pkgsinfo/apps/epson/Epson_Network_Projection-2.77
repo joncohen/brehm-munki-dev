@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string>Software to allow a single user to connect to Epson PowerLite System</string>
+	<key>display_name</key>
+	<string>EasyMP Network Projection Ver.2.77</string>
+	<key>installed_size</key>
+	<integer>9852</integer>
+	<key>installer_item_hash</key>
+	<string>623892ec9f0040828b4c78b5c2cace0a394092d2bcc45dd3bffe735c7e598135</string>
+	<key>installer_item_location</key>
+	<string>apps/epson/epson14451-NetworkProjection.dmg</string>
+	<key>installer_item_size</key>
+	<integer>3218</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>Epson_Network_Projection</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>empnetworkprojection.pkg</string>
+			<key>installed_size</key>
+			<integer>9000</integer>
+			<key>packageid</key>
+			<string>com.epson.easymp_network_projection</string>
+			<key>version</key>
+			<string>2.77</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>empnetworkprojectionaudiodriver.pkg</string>
+			<key>installed_size</key>
+			<integer>852</integer>
+			<key>packageid</key>
+			<string>com.epson.easymp_network_projection.audiodriver</string>
+			<key>version</key>
+			<string>1.30</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>2.77</string>
+</dict>
+</plist>

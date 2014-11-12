@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>jonathan.cohen</string>
+		<key>creation_date</key>
+		<date>2014-08-15T19:54:41Z</date>
+		<key>munki_version</key>
+		<string>1.0.0.1864</string>
+		<key>os_version</key>
+		<string>10.9.4</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>The Geometer’s Sketchpad® is the world’s leading software for teaching mathematics. Sketchpad® gives students at all levels—from third grade through college—a tangible, visual way to learn mathematics that increases their engagement, understanding, and achievement.</string>
+	<key>display_name</key>
+	<string>GeometersSketchPad-Installer-v2</string>
+	<key>installer_item_hash</key>
+	<string>f8869e60c721f96bfcc0f967d99b92c9e0440283e48a9c58e9d81549e0d8f113</string>
+	<key>installer_item_location</key>
+	<string>apps/assistivetech/GSP5-5.06.dmg</string>
+	<key>installer_item_size</key>
+	<integer>84513</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.kcptech.sketchpad5</string>
+			<key>CFBundleName</key>
+			<string>Sketchpad</string>
+			<key>CFBundleShortVersionString</key>
+			<string>5.06</string>
+			<key>CFBundleVersion</key>
+			<string>1074</string>
+			<key>path</key>
+			<string>/Applications/GSP5.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>GSP5.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>Geometers Sketchpad</string>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>5.06</string>
+</dict>
+</plist>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>jonathan.cohen</string>
+		<key>creation_date</key>
+		<date>2014-09-29T17:58:51Z</date>
+		<key>munki_version</key>
+		<string>2.0.0.2229</string>
+		<key>os_version</key>
+		<string>10.9.4</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>beta</string>
+		<string>testing</string>
+		<string>production</string>
+	</array>
+	<key>category</key>
+	<string>System Tools</string>
+	<key>description</key>
+	<string>Stops all threats—even those designed for Windows—so your computer is safe, and files you send to other computers are safe too. We keep our antivirus light and easy. It'll work quietly in the background with your choice of scanning on-access, on-demand or on a schedule.</string>
+	<key>developer</key>
+	<string>Sophos</string>
+	<key>display_name</key>
+	<string>Sophos Anti-Virus 9.0.7</string>
+	<key>installer_item_hash</key>
+	<string>d8458394c3798907682af1a52ed82a7c56a764c7861a9d8f5212a17a2b512903</string>
+	<key>installer_item_location</key>
+	<string>apps/user_utilities/anti-virus/Sophos Anti-Virus 9.0.7.pkg</string>
+	<key>installer_item_size</key>
+	<integer>94091</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>Sophos Anti-Virus</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>0</integer>
+			<key>packageid</key>
+			<string>com.brehmtechnology.pkg.SophosAnti-Virus907</string>
+			<key>version</key>
+			<string>9.0.7</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>9.0.7</string>
+</dict>
+</plist>

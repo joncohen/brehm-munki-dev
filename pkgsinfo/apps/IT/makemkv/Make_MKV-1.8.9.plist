@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>jonathan.cohen</string>
+		<key>creation_date</key>
+		<date>2014-04-24T18:54:35Z</date>
+		<key>munki_version</key>
+		<string>1.0.0.1864</string>
+		<key>os_version</key>
+		<string>10.9.2</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>beta</string>
+	</array>
+	<key>description</key>
+	<string>MKV stands for "Matroska Video". Matroska is a container file format, capable of holding unlimited number of video, audio and subtitile tracks, along with any metadata. Practically this means that it is possible to put entire movie with multiple sound and subtitle tracks, chapters information and movie thumbnail into single file. Being open and patent-free Matroska gained broad support recently and quickly becomes de-facto standard for storing movies.</string>
+	<key>display_name</key>
+	<string>Make MKV</string>
+	<key>installer_item_hash</key>
+	<string>0ac5ec84ba8dac35e11ae56c42ad1ba9667a047863696703069ed248f0e4e0ce</string>
+	<key>installer_item_location</key>
+	<string>apps/IT/makemkv/MakeMKV-1.8.9.dmg</string>
+	<key>installer_item_size</key>
+	<integer>22728</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.makemkv.MakeMKV</string>
+			<key>CFBundleName</key>
+			<string>MakeMKV</string>
+			<key>CFBundleShortVersionString</key>
+			<string>v1.8.9</string>
+			<key>CFBundleVersion</key>
+			<string>0</string>
+			<key>path</key>
+			<string>/Applications/MakeMKV.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleVersion</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>MakeMKV.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>Make_MKV</string>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.8.9</string>
+</dict>
+</plist>

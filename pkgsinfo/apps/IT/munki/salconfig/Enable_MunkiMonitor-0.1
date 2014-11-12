@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>beta</string>
+		<string>testing</string>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string>Installs the necessary components for Munki Monitoring via Sal</string>
+	<key>display_name</key>
+	<string>Enable_MunkiMonitor</string>
+	<key>installed_size</key>
+	<integer>484</integer>
+	<key>installer_item_hash</key>
+	<string>15c0d6e818f3081ced51aed065384512f7bfea913d6881a9c04fc43e142b843c</string>
+	<key>installer_item_location</key>
+	<string>apps/IT/munki/salconfig/Enable_MunkiMonitor-0.1.dmg</string>
+	<key>installer_item_size</key>
+	<integer>108</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>Enable_MunkiMonitor</string>
+
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>md5checksum</key>
+			<string>d41d8cd98f00b204e9800998ecf8427e</string>
+			<key>path</key>
+			<string>/usr/local/munki/salenabled</string>
+			<key>type</key>
+			<string>file</string>
+		</dict>
+	</array>
+
+
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>Enable_MunkiMonitor.pkg</string>
+			<key>installed_size</key>
+			<integer>484</integer>
+			<key>name</key>
+			<string>Munki Management Configuration for Brehm Clients</string>
+			<key>packageid</key>
+			<string>com.brehmprepschool.pkg.Enable_MunkiMonitor</string>
+			<key>version</key>
+			<string>0.1</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>0.1</string>
+</dict>
+</plist>

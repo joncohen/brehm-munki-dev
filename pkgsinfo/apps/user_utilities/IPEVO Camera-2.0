@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>display_name</key>
+	<string>IPEVO P2V Document Camera</string>
+	<key>installer_item_hash</key>
+	<string>9ca0a34547cd84478577d35a160c6b224a858a15cff4957788185e085d0440ed</string>
+	<key>installer_item_location</key>
+	<string>apps/user_utilities/P2V-v2.dmg</string>
+	<key>installer_item_size</key>
+	<integer>747</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.ipevo.p2v</string>
+			<key>CFBundleName</key>
+			<string>P2V</string>
+			<key>CFBundleShortVersionString</key>
+			<string>2.0</string>
+			<key>path</key>
+			<string>/Applications/P2V.app</string>
+			<key>type</key>
+			<string>application</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>P2V.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>IPEVO Camera</string>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>2.0</string>
+</dict>
+</plist>

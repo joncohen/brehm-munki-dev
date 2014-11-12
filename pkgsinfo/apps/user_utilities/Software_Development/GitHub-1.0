@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Another great way to add repositories to clone from GitHub.com. After you've installed Mac, you'll get a new button on GitHub.com when you're logged in that allows you to clone with one click.</string>
+	<key>display_name</key>
+	<string>GitHub</string>
+	<key>installed_size</key>
+	<integer>30472</integer>
+	<key>installer_item_hash</key>
+	<string>43c0731492a6115fdbf49444d48995cc95b4dd1e2813e85bcbc69c1f0e10cfd1</string>
+	<key>installer_item_location</key>
+	<string>apps/user_utilities/Software_Development/GitHub.dmg</string>
+	<key>installer_item_size</key>
+	<integer>9891</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>GitHub</string>
+	
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.github.GitHub</string>
+			<key>CFBundleName</key>
+			<string>GitHub</string>
+			<key>CFBundleShortVersionString</key>
+			<string>53</string>
+			<key>path</key>
+			<string>/Applications/GitHub.app</string>
+			<key>type</key>
+			<string>application</string>
+		</dict>
+	</array>
+
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>GitHub.pkg</string>
+			<key>installed_size</key>
+			<integer>30472</integer>
+			<key>name</key>
+			<string>GitHub</string>
+			<key>packageid</key>
+			<string>com.mygreatcompany.pkg.GitHub</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.0</string>
+</dict>
+</plist>

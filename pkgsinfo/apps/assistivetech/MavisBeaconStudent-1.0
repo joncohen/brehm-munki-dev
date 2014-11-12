@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Mavis Beacon Schools Edition.  Student Installer</string>
+	<key>display_name</key>
+	<string>Mavis Beacon for Schools - Student</string>
+	<key>installed_size</key>
+	<integer>661236</integer>
+	<key>installer_item_hash</key>
+	<string>8ba53784a27b33cb7e43be6068c3479022e4a9b81dcef1d95660787445eac8bb</string>
+	<key>installer_item_location</key>
+	<string>apps/assistivetech/MavisBeacon.dmg</string>
+	<key>installer_item_size</key>
+	<integer>523094</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>MavisBeaconStudent</string>
+	
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.mackiev.mavis.school</string>
+			<key>CFBundleName</key>
+			<string>Mavis Beacon</string>
+			<key>CFBundleShortVersionString</key>
+			<string>1.0</string>
+			<key>path</key>
+			<string>/Applications/Mavis Beacon Teaches Typing.app</string>
+			<key>type</key>
+			<string>application</string>
+		</dict>
+	</array>
+
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>Mavis_Student_Edt.pkg</string>
+			<key>installed_size</key>
+			<integer>661236</integer>
+			<key>name</key>
+			<string>Mavis_Student_Edt</string>
+			<key>packageid</key>
+			<string>com.mygreatcompany.pkg.Mavis_Student_Edt</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+
+	<key>postinstall_script</key>
+	<string>#!/bin/sh
+	
+	 defaults write /Library/Preferences/com.mackiev.global.mavis MBSharedPath /Volumes/MavisBeacon
+	
+	exit 0
+	</string>
+
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.0</string>
+</dict>
+</plist>

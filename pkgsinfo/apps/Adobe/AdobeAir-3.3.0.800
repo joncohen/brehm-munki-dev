@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>beta</string>
+	</array>
+	<key>description</key>
+	<string>Rebuild Adobe Air Installation Package</string>
+	<key>display_name</key>
+	<string>Adobe Air Installer</string>
+	<key>installer_item_hash</key>
+	<string>00529ad7f6aecd505c8a536b14b0ddf2db1685452a77f11df5f1d9a7a6293d61</string>
+	<key>installer_item_location</key>
+	<string>apps/Adobe/AdobeAirBuild.dmg</string>
+	<key>installer_item_size</key>
+	<integer>30736</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>AdobeAir</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>AdobeCommunityHelpClientWrapper.pkg</string>
+			<key>installed_size</key>
+			<integer>0</integer>
+			<key>packageid</key>
+			<string>com.googlecode.munki.pkg.adobehelpinstaller</string>
+			<key>version</key>
+			<string>3.3.0.800</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>3.3.0.800</string>
+</dict>
+</plist>

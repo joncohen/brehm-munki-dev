@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Installs the Admin WorkCentre 7830 Printer to this computer with the PPD driver file for the 7830</string>
+	<key>display_name</key>
+	<string>Install Admin 7830 Xerox</string>
+	<key>installed_size</key>
+	<integer>24</integer>
+	<key>installer_item_hash</key>
+	<string>996520df66a200038ead4f0d665fa4619e4969027d28aac28049deda5e565669</string>
+	<key>installer_item_location</key>
+	<string>apps/printers/device_installers/Admin 7830 Installer.dmg</string>
+	<key>installer_item_size</key>
+	<integer>19</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>Install Admin 7830 Xerox</string>
+
+	<key>requires</key>
+	<string>XeroxPrintDriver</string>
+
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>Admin 7830 Installer.pkg</string>
+			<key>installed_size</key>
+			<integer>24</integer>
+			<key>name</key>
+			<string>Admin 7830 Installer</string>
+			<key>packageid</key>
+			<string>com.brehm.pkg.Admin 7830 Installer</string>
+			<key>version</key>
+			<string>0.1.0</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>/etc/cups/printers_deployment/uninstalls/Admin_Xerox.sh</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>0.1.0</string>
+</dict>
+</plist>

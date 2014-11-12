@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>GeoGebra - Dynamic Mathematics for Everyone - http://www.geogebra.org/</string>
+	<key>installer_item_hash</key>
+	<string>8c559d74e6fd2290684039ef2c714d249da388cf98833e7cc76f2579fab0880b</string>
+	<key>installer_item_location</key>
+	<string>apps/assistivetech/GeoGebra.dmg</string>
+	<key>installer_item_size</key>
+	<integer>14706</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>geogebra.GeoGebra</string>
+			<key>CFBundleName</key>
+			<string>GeoGebra</string>
+			<key>CFBundleShortVersionString</key>
+			<string>4.0.30</string>
+			<key>path</key>
+			<string>/Applications/GeoGebra.app</string>
+			<key>type</key>
+			<string>application</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>GeoGebra.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>GeoGebra</string>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>4.0.30</string>
+</dict>
+</plist>

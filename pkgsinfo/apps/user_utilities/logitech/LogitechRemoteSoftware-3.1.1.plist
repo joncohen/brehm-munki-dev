@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>jonathan.cohen</string>
+		<key>creation_date</key>
+		<date>2014-04-24T14:33:38Z</date>
+		<key>munki_version</key>
+		<string>1.0.0.1864</string>
+		<key>os_version</key>
+		<string>10.9.2</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>beta</string>
+	</array>
+	<key>description</key>
+	<string>Logitech Harmony Remote is driver software for the Harmony Remote series. This installer has built-in support for English, French, German, Spanish, Italian, Danish, Dutch, Swedish, Finnish, Portuguese, Polish and Norwegian.</string>
+	<key>display_name</key>
+	<string>Logitech Remote Software</string>
+	<key>installed_size</key>
+	<integer>70160</integer>
+	<key>installer_item_hash</key>
+	<string>13a100211fb18569563c9d9bbe6c231cbfaa50989df0b471703ec942be2ecafb</string>
+	<key>installer_item_location</key>
+	<string>apps/user_utilities/logitech/LogitechHarmonyRemoteSoftware7.8.1-OSX-3.1.1.dmg</string>
+	<key>installer_item_size</key>
+	<integer>26115</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>LogitechRemoteSoftware</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>65352</integer>
+			<key>packageid</key>
+			<string>com.logitech.harmony.logitechRemoteSoftware.LogitechHarmonyRemoteSoftware.pkg</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>3412</integer>
+			<key>packageid</key>
+			<string>com.logitech.harmony.logitechRemoteSoftware.MyRoot.pkg</string>
+			<key>version</key>
+			<string>3.1.1</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>1396</integer>
+			<key>packageid</key>
+			<string>com.logitech.harmony.logitechRemoteSoftware.remotecore.pkg</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>3.1.1</string>
+</dict>
+</plist>

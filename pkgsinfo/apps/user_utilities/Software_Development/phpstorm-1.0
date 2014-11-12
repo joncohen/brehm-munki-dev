@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>PhpStorm is a lightweight and smart PHP IDE focused on developer productivity that deeply understands your code, provides smart code completion, quick navigation and on-the-fly error checking. It is always ready to help you shape your code, run unit-tests or provide visual debugging.</string>
+	<key>display_name</key>
+	<string>phpstorm</string>
+	<key>installed_size</key>
+	<integer>226424</integer>
+	<key>installer_item_hash</key>
+	<string>34a11026e04c9e1f23a3c0acedf697ce535f9bb0edd4b85ec2e8497f1ede5500</string>
+	<key>installer_item_location</key>
+	<string>apps/user_utilities/Software_Development/phpstorm.dmg</string>
+	<key>installer_item_size</key>
+	<integer>104705</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>phpstorm</string>
+
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.jetbrains.PhpStorm</string>
+			<key>CFBundleName</key>
+			<string>PhpStorm</string>
+			<key>CFBundleShortVersionString</key>
+			<string>4.0.2</string>
+			<key>path</key>
+			<string>/Applications/PhpStorm.app</string>
+			<key>type</key>
+			<string>application</string>
+		</dict>
+	</array>
+
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>phpstorm.pkg</string>
+			<key>installed_size</key>
+			<integer>226424</integer>
+			<key>name</key>
+			<string>phpstorm</string>
+			<key>packageid</key>
+			<string>com.mygreatcompany.pkg.phpstorm</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.0</string>
+</dict>
+</plist>

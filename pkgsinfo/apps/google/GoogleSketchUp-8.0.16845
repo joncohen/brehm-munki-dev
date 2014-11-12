@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string>3D Design Software by Google and Trimble</string>
+	<key>display_name</key>
+	<string>Google SketchUp 8.0</string>
+	<key>installed_size</key>
+	<integer>98527</integer>
+	<key>installer_item_hash</key>
+	<string>fd1e7e7ada404343354d65638cab05d64e05b77a89e422cfd4b4f1634f0efa2d</string>
+	<key>installer_item_location</key>
+	<string>apps/google/FM-3-0-16845-EN.dmg</string>
+	<key>installer_item_size</key>
+	<integer>39500</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>GoogleSketchUp</string>
+
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.google.sketchupfree8</string>
+			<key>CFBundleName</key>
+			<string>SketchUp</string>
+			<key>CFBundleShortVersionString</key>
+			<string>8.0</string>
+			<key>path</key>
+			<string>/Applications/Google SketchUp 8/SketchUp.app</string>
+			<key>type</key>
+			<string>application</string>
+		</dict>
+	</array>
+
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>83683</integer>
+			<key>packageid</key>
+			<string>com.google.sketchup8.sketchup.application</string>
+			<key>version</key>
+			<string>8.0.16845</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>14844</integer>
+			<key>packageid</key>
+			<string>com.google.sketchup8.sketchup.support</string>
+			<key>version</key>
+			<string>8.0.16845</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>8.0.16845</string>
+</dict>
+</plist>

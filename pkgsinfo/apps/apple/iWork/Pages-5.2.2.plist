@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>jonathan.cohen</string>
+		<key>creation_date</key>
+		<date>2014-08-26T19:18:02Z</date>
+		<key>munki_version</key>
+		<string>1.0.0.1864</string>
+		<key>os_version</key>
+		<string>10.9.4</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>beta</string>
+	</array>
+	<key>category</key>
+		<string>Office and Productivity</string>
+	<key>description</key>
+	<string>Pages for Mac is a powerful word processor that gives you everything you need to create documents that look beautiful. And read beautifully. It lets you work seamlessly between Mac and iOS devices. And even work effortlessly with people who use Microsoft Word.</string>
+	<key>display_name</key>
+	<string>Pages</string>
+	<key>installer_item_hash</key>
+	<string>5574ca847dbd571a40502c038eeb1655669e6242e4ad71df3895ada371a112c1</string>
+	<key>installer_item_location</key>
+	<string>apps/apple/iWork/Pages-5.2.2.dmg</string>
+	<key>installer_item_size</key>
+	<integer>322617</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.iWork.Pages</string>
+			<key>CFBundleName</key>
+			<string>Pages</string>
+			<key>CFBundleShortVersionString</key>
+			<string>5.2.2</string>
+			<key>CFBundleVersion</key>
+			<string>1877</string>
+			<key>minosversion</key>
+			<string>10.9</string>
+			<key>path</key>
+			<string>/Applications/Pages.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>Pages.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.9</string>
+	<key>name</key>
+	<string>Pages</string>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>5.2.2</string>
+</dict>
+</plist>

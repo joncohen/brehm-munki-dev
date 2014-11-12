@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>RestartAction</key>
+	<string>RequireRestart</string>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>jonathan.cohen</string>
+		<key>creation_date</key>
+		<date>2014-11-11T22:22:13Z</date>
+		<key>munki_version</key>
+		<string>2.0.1.2253</string>
+		<key>os_version</key>
+		<string>10.9.5</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>beta</string>
+	</array>
+	<key>category</key>
+	<string>System Tools</string>
+	<key>description</key>
+	<string>The OS X Mavericks 10.9.5 update is recommended for all Mavericks users. It improves the stability, compatibility, and security of your Mac.</string>
+	<key>developer</key>
+	<string>Apple</string>
+	<key>display_name</key>
+	<string>OS X Combined 10.9.5 Update</string>
+	<key>installed_size</key>
+	<integer>1705572</integer>
+	<key>installer_item_hash</key>
+	<string>c9bb94cb2084e8e5691cd88ea9a597cc7aebda17e69d255bdfa7973f5646ac0a</string>
+	<key>installer_item_location</key>
+	<string>apps/apple/os/OSXUpdCombo10.9.5-1.0.0.0.1.1306847324.dmg</string>
+	<key>installer_item_size</key>
+	<integer>959240</integer>
+	<key>minimum_os_version</key>
+	<string>10.9.0</string>
+	<key>name</key>
+	<string>OSX-Combo_Update-1095</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>1705572</integer>
+			<key>packageid</key>
+			<string>combo</string>
+			<key>version</key>
+			<string>1.0.0.0.1.1306847324</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.0.0.0.1.1306847324</string>
+</dict>
+</plist>

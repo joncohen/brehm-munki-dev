@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+		<string>production</string>
+	</array>
+	<key>category</key>
+		<string>Assistive Technology</string>
+	<key>description</key>
+	<string>Kurzweil 3000 v5 has built-in tools for reading, writing, study skills and test taking hosted through a cloud-based centralized library allowing for easy access and distribution of curricula, while reporting delivers helpful insight into student usage.</string>
+	<key>display_name</key>
+	<string>Kurzweil 3000 Web Client</string>
+	<key>installer_item_hash</key>
+	<string>0c82bf5f06be549f8553c40d7f1153d896597e523f51ec3cb1e8bc3c9307e328</string>
+	<key>installer_item_location</key>
+	<string>apps/assistivetech/K3000_5.0.23.web-5.0.23, build 34.dmg</string>
+	<key>installer_item_size</key>
+	<integer>295622</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.kurzweiledu.3000</string>
+			<key>CFBundleShortVersionString</key>
+			<string>5.0.23, build 34</string>
+			<key>CFBundleVersion</key>
+			<string>5.0.23</string>
+			<key>path</key>
+			<string>/Applications/Kurzweil 3000.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>Kurzweil 3000.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.9.0</string>
+	<key>name</key>
+	<string>Kurzweil3000_Web</string>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>5.0.23, build 34</string>
+</dict>
+</plist>

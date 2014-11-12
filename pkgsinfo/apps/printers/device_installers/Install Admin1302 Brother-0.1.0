@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Installs the Brother 7840 MFC to this computer.</string>
+	<key>display_name</key>
+	<string>Install Admin1302 Brother</string>
+	<key>installed_size</key>
+	<integer>24</integer>
+	<key>installer_item_hash</key>
+	<string>8cf3d169a1bfcf998207bc4c1f3ef234ebc8f0667112e87f94b6eb23ea48ca87</string>
+	<key>installer_item_location</key>
+	<string>apps/printers/device_installers/Install Admin1302 Brother.dmg</string>
+	<key>installer_item_size</key>
+	<integer>19</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>Install Admin1302 Brother</string>
+	
+	<key>requires</key>
+	<string>BrotherPrinterDrivers</string>
+
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>Install Admin1302 Brother.pkg</string>
+			<key>installed_size</key>
+			<integer>24</integer>
+			<key>name</key>
+			<string>Install Admin1302 Brother</string>
+			<key>packageid</key>
+			<string>com.brehm.pkg.Install Admin1302 Brother</string>
+			<key>version</key>
+			<string>0.1.0</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>/etc/cups/printers_deployment/uninstalls/Admin1302_Brother.sh</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>0.1.0</string>
+</dict>
+</plist>

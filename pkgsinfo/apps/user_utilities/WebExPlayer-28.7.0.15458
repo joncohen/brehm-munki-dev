@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string></string>
+	<key>display_name</key>
+	<string>Network Recording Player</string>
+	<key>installed_size</key>
+	<integer>23192</integer>
+	<key>installer_item_hash</key>
+	<string>67c4fc4c9666b883025b19a5e390561c2881bc1caf94f01ac82b40560e0a44a3</string>
+	<key>installer_item_location</key>
+	<string>apps/user_utilities/webexnbrplayer_intel.dmg</string>
+	<key>installer_item_size</key>
+	<integer>7833</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>WebExPlayer</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>23192</integer>
+			<key>packageid</key>
+			<string>nbr.mac.webex.com</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>28.7.0.15458</string>
+</dict>
+</plist>

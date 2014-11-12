@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string></string>
+	<key>display_name</key>
+	<string>Kurzweil 3000 Network Client</string>
+	<key>installer_item_hash</key>
+	<string>5213c4230cd07339414ad7cceb55c2fd8721a28efdf896766feb3f8ba9019ae2</string>
+	<key>installer_item_location</key>
+	<string>apps/assistivetech/K3000_4.6.5.net.dmg</string>
+	<key>installer_item_size</key>
+	<integer>321331</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.kurzweiledu.3000</string>
+			<key>CFBundleShortVersionString</key>
+			<string>4.6.5.</string>
+			<key>path</key>
+			<string>/Applications/Kurzweil 3000.app</string>
+			<key>type</key>
+			<string>application</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>Kurzweil 3000.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>Kurzweil3000</string>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>4.6.5.</string>
+</dict>
+</plist>

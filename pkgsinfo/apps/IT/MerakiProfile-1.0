@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+        <key>autoremove</key>
+            <false/>
+        <key>catalogs</key>
+            <array>
+                <string>testing</string>
+            </array>
+        <key>description</key>
+            <string></string>
+        <key>display_name</key>
+            <string>Meraki MDM</string>
+        <key>installed_size</key>
+            <integer>20</integer>
+        <key>installer_item_hash</key>
+            <string>69e50b9c58dd2d2f528a21fc66ca07f033e4727f514e77d8093a03b674ac679b</string>
+        <key>installer_item_location</key>
+            <string>apps/IT/MerakiProfile-1.0.dmg</string>
+        <key>installer_item_size</key>
+            <integer>11</integer>
+        <key>name</key>
+            <string>MerakiProfile</string>
+        
+    <key>installcheck_script</key>
+        <string>#!/bin/sh
+
+            # Based on 2010 Walter Meyer SUNY Purchase College (c)
+            # Modified by Nick McSpadden, 2013
+            
+            # Script to install and setup a Profile on a Mac OS X system to use Meraki Management Profiles.
+            # Populate these options if you want to set specific options.
+                currentVersion="1.0"
+            
+            ### Determine if receipt is installed ###
+            if [ -f /brehm/profiles/receipts/MerakiProfile.plist ]; then
+                storedVersion=`/usr/libexec/PlistBuddy -c "Print :version" /brehm/profiles/receipts/MerakiProfile.plist`
+                  echo "Stored version: $storedVersion"
+            else
+                  storedVersion="0"
+            fi
+            
+            versionComparison=`echo "$storedVersion &lt; $currentVersion" | bc -l`
+            
+            # This will be 0 if the current receipt is greater than or equal to current version of the script
+            
+            ### Profile Install ###
+            # If the profile already exists (returns 0), we don't need to reinstall it.
+            if [ $? -eq 0 ]; then
+                 if [ $versionComparison == 0 ]; then
+                      # We are at the current or greater version
+                      exit 1
+                 fi
+            
+            # We are of lesser version, and therefore we should delete the profile and reinstall.
+            profiles -R -F /brehm/profiles/meraki_sm_mdm.mobileconfig
+            exit 0
+            fi
+        </string>
+
+        <key>minimum_os_version</key>
+            <string>10.7.5</string>
+
+        <key>postinstall_script</key>
+            <string>#!/bin/sh
+
+                # Based on 2010 Walter Meyer SUNY Purchase College (c)
+                # Modified by Nick McSpadden, 2013
+    
+                # Script to install a Meraki MDM on a Mac OS X system in a "Munki-Friendly" way.
+    
+                # Variables. Edit these.
+                location="Brehm Prep Main Campus"
+    
+                # Populate these options if you want to set specific options.
+                currentVersion="1.0"
+    
+                ### Determine if receipt is installed ###
+                    if [ -f /brehm/profiles/receipts/MerakiProfile.plist ]; then
+                        storedVersion=`/usr/libexec/PlistBuddy -c "Print :version" /brehm/profiles/receipts/MerakiProfile.plist`
+                         echo "Stored version: $storedVersion"
+                    else
+                       storedVersion="0"
+                fi
+    
+                versionComparison=`echo "$storedVersion &lt; $currentVersion" | bc -l`
+    
+                # This will be 0 if the current receipt is greater than or equal to current version of the script
+    
+                ### Printer Install ###
+                # If the profile already exists (returns 0), we don't need to reinstall it.
+                    if [ $? -eq 0 ]; then
+                      if [ $versionComparison == 0 ]; then
+                          # We are at the current or greater version
+                           exit 1
+                fi
+    
+                 # We are of lesser version, and therefore we should delete the profile and reinstall.
+                    profiles -R -F /brehm/profiles/meraki_sm_mdm.mobileconfig
+                fi
+    
+                # Now we can install the profile.
+                profiles -I -F /brehm/profiles/meraki_sm_mdm.mobileconfig
+    
+                # Enable and start the printers on the system (after adding the printer initially it is paused).
+                
+                
+                # Create a receipt for the profile
+                mkdir -p /brehm/profiles/receipts
+                /usr/libexec/PlistBuddy -c "Add :version string" /brehm/profiles/receipts/MerakiProfile.plist
+                /usr/libexec/PlistBuddy -c "Set :version $currentVersion" /brehm/profiles/receipts/MerakiProfile.plist
+                
+                # Permission the directories properly.
+                chown -R root:admin /brehm/profiles/receipts
+                chmod -R 755 /brehm/profiles/receipts
+                
+                exit 0
+             </string>
+
+
+    <key>receipts</key>
+        <array>
+                <dict>
+                        <key>filename</key>
+                        <string>MerakiProfile.pkg</string>
+                        <key>installed_size</key>
+                        <integer>20</integer>
+                        <key>name</key>
+                        <string>Meraki</string>
+                        <key>packageid</key>
+                        <string>com.mygreatcompany.pkg.Meraki</string>
+                        <key>version</key>
+                        <string>1.0</string>
+                </dict>
+        </array>
+        
+        <key>uninstall_method</key>
+            <string>uninstall_script</string>
+        <key>uninstall_script</key>
+             <string>#!/bin/sh
+                profiles -R -F /brehm/profiles/meraki_sm_mdm.mobileconfig
+                rm -f /brehm/profiles/meraki_sm_mdm.mobileconfig
+                rm -f /brehm/profiles/receipts/MerakiProfile.plist</string>
+
+        <key>uninstallable</key>
+        <true/>
+        <key>version</key>
+        <string>1.0</string>
+</dict>
+</plist>

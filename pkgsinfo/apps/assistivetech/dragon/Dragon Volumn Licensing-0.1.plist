@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>jonathan.cohen</string>
+		<key>creation_date</key>
+		<date>2014-09-11T16:11:01Z</date>
+		<key>munki_version</key>
+		<string>1.0.0.1864</string>
+		<key>os_version</key>
+		<string>10.9.4</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+		<string>production</string>
+	</array>
+	<key>category</key>
+		<string>Assistive Technology</string>
+	<key>description</key>
+	<string>Install of the Brehm Preparatory School - Dragon Dicatate for Mac Licensing information.</string>
+	<key>display_name</key>
+	<string>Dragon Dictate 4 License</string>
+	<key>installed_size</key>
+	<integer>20</integer>
+	<key>installer_item_hash</key>
+	<string>c48f7855b43cdc98d8b14d11bf0a10602533dc3cfc44469420fb1974c2437d01</string>
+	<key>installer_item_location</key>
+	<string>apps/assistivetech/dragon/Dragon Volumn Licensing-0.1.dmg</string>
+	<key>installer_item_size</key>
+	<integer>21</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>Dragon Volumn Licensing</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>Dragon Volumn Licensing.pkg</string>
+			<key>installed_size</key>
+			<integer>20</integer>
+			<key>name</key>
+			<string>Dragon Volumn Licensing</string>
+			<key>packageid</key>
+			<string>com.brehmprepschool.pkg.Dragon Volumn Licensing</string>
+			<key>version</key>
+			<string>0.1</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>0.1</string>
+</dict>
+</plist>

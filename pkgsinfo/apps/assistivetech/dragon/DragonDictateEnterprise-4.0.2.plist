@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>jonathan.cohen</string>
+		<key>creation_date</key>
+		<date>2014-09-05T19:05:56Z</date>
+		<key>munki_version</key>
+		<string>1.0.0.1864</string>
+		<key>os_version</key>
+		<string>10.9.4</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+		<string>production</string>
+	</array>
+	<key>category</key>
+		<string>Assistive Technology</string>
+	<key>description</key>
+	<string>Dragon Dictate for Mac, v4 is the ultimate productivity tool that enables you to save time and get more done. Dictate, edit, transcribe and control your computer all by using your voice.</string>
+	<key>display_name</key>
+	<string>Dragon Dictate Vol Lic</string>
+	<key>installed_size</key>
+	<integer>2280957</integer>
+	<key>installer_item_hash</key>
+	<string>de32bb7c0620e7a8c44dc3861c0adfa91f71cf1a0cb761c42657492677db0cc5</string>
+	<key>installer_item_location</key>
+	<string>apps/assistivetech/dragon/Dragon Dictate Installer-4.0.2.pkg</string>
+	<key>installer_item_size</key>
+	<integer>2018912</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>DragonDictateEnterprise</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>69947</integer>
+			<key>packageid</key>
+			<string>com.dragon.dictate</string>
+			<key>version</key>
+			<string>4.0.2</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>10401</integer>
+			<key>packageid</key>
+			<string>com.nuance.</string>
+			<key>version</key>
+			<string>0.0.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>2200609</integer>
+			<key>packageid</key>
+			<string>com.dragon.Speech_Engine_Data__English__4_0</string>
+			<key>version</key>
+			<string>0</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>4.0.2</string>
+</dict>
+</plist>

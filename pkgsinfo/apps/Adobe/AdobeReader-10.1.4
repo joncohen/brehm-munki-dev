@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Adobe Reader X for Mac</string>
+	<key>display_name</key>
+	<string>Adobe Reader X</string>
+	<key>installed_size</key>
+	<integer>407003</integer>
+	<key>installer_item_hash</key>
+	<string>e092f962a0e363393335aca75383c1046046d99d90caa9654ca25fd2a6e2f20e</string>
+	<key>installer_item_location</key>
+	<string>apps/Adobe/AdbeRdr1014_en_US.dmg</string>
+	<key>installer_item_size</key>
+	<integer>71158</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>AdobeReader</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>405567</integer>
+			<key>packageid</key>
+			<string>com.adobe.acrobat.reader.1014.reader.app.pkg.en_US</string>
+			<key>version</key>
+			<string>10.1.4</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>1432</integer>
+			<key>packageid</key>
+			<string>com.adobe.acrobat.reader.1014.reader.browser.pkg.en_US</string>
+			<key>version</key>
+			<string>10.1.4</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>4</integer>
+			<key>packageid</key>
+			<string>com.adobe.acrobat.reader.1014.reader.appsupport.pkg.en_US</string>
+			<key>version</key>
+			<string>10.1.4</string>
+		</dict>
+	</array>
+	
+	<key>preinstall_script</key>
+        <string>#!/bin/sh
+
+		if [ -e "/Applications/Adobe Reader.app" ]; then
+        		rm -r "/Applications/Adobe Reader.app"
+		fi
+		exit 0
+        </string>
+
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>10.1.4</string>
+</dict>
+</plist>

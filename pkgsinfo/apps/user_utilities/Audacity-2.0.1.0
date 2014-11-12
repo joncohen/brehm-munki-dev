@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string>Audio editor for recording, slicing, and mixing audio.</string>
+	<key>display_name</key>
+	<string>Audacity</string>
+	<key>installed_size</key>
+	<integer>62360</integer>
+	<key>installer_item_hash</key>
+	<string>910c21b82a28e0b5f154c93d27dcac2b9c0405436234b7a309bf84249c5ecc85</string>
+	<key>installer_item_location</key>
+	<string>apps/user_utilities/Audacity.dmg</string>
+	<key>installer_item_size</key>
+	<integer>28742</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>Audacity</string>
+
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>net.sourceforge.audacity</string>
+			<key>CFBundleName</key>
+			<string>Audacity</string>
+			<key>CFBundleShortVersionString</key>
+			<string>2.0.1.0</string>
+			<key>path</key>
+			<string>/Applications/Audacity/Audacity.app</string>
+			<key>type</key>
+			<string>application</string>
+		</dict>
+	</array>
+
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>Audacity.pkg</string>
+			<key>installed_size</key>
+			<integer>62360</integer>
+			<key>name</key>
+			<string>Audacity</string>
+			<key>packageid</key>
+			<string>com.mygreatcompany.pkg.Audacity</string>
+			<key>version</key>
+			<string>2.0.1.0</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>2.0.1.0</string>
+</dict>
+</plist>

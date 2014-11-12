@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string>Drivers for Xerox Printers</string>
+	<key>display_name</key>
+	<string>Xerox Print Drivers</string>
+	<key>installed_size</key>
+	<integer>237538</integer>
+	<key>installer_item_hash</key>
+	<string>f6581323732bc02dd514f3ba97c2b993d42fc99c447fda949a2a11b4beb87db0</string>
+	<key>installer_item_location</key>
+	<string>apps/printers/xerox/XeroxPrintDriver.2.94.3.dmg</string>
+	<key>installer_item_size</key>
+	<integer>111356</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>XeroxPrintDriver</string>
+
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>md5checksum</key>
+			<string>d41d8cd98f00b204e9800998ecf8427e</string>
+			<key>path</key>
+			<string>/brehm/logs/installedXeroxDrivers_2943</string>
+			<key>type</key>
+			<string>file</string>
+		</dict>
+	</array>
+
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>62506</integer>
+			<key>packageid</key>
+			<string>com.xerox.print.xeroxPrinter.10_5DataSources.pkg</string>
+			<key>version</key>
+			<string>0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>11106</integer>
+			<key>packageid</key>
+			<string>com.xerox.print.xeroxPrinter.10_7DataSources.pkg</string>
+			<key>version</key>
+			<string>0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>163926</integer>
+			<key>packageid</key>
+			<string>com.xerox.print.xeroxPrinter.pkg</string>
+			<key>version</key>
+			<string>0</string>
+		</dict>
+	</array>
+
+	 <key>postinstall_script</key>
+        <string>#!/bin/sh
+touch /brehm/logs/installedXeroxDrivers_2943
+
+exit 0
+        </string>
+
+
+
+
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>2.94.3</string>
+</dict>
+</plist>
+

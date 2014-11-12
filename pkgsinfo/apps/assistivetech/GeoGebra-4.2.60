@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string>GeoGebra - Dynamic Mathematics for Everyone - http://www.geogebra.org/</string>
+	<key>display_name</key>
+	<string>GeoGebra</string>
+	<key>installer_item_hash</key>
+	<string>ce4e80aea9046c31ca07f17f4ae7b8eb5f103f6e6949307bcb919308cab469a4</string>
+	<key>installer_item_location</key>
+	<string>apps/assistivetech/GeoGebra-4.2.60.dmg</string>
+	<key>installer_item_size</key>
+	<integer>9814</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>geogebra.GeoGebra</string>
+			<key>CFBundleName</key>
+			<string>GeoGebra</string>
+			<key>CFBundleShortVersionString</key>
+			<string>4.2.60</string>
+			<key>CFBundleVersion</key>
+			<string>0</string>
+			<key>path</key>
+			<string>/Applications/GeoGebra.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>GeoGebra.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>GeoGebra</string>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>4.2.60</string>
+</dict>
+</plist>

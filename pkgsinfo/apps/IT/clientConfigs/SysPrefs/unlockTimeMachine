@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>brehmfaculty</string>
+		<key>creation_date</key>
+		<date>2014-04-21T15:28:45Z</date>
+		<key>munki_version</key>
+		<string>0.9.2.1863</string>
+		<key>os_version</key>
+		<string>10.9.2</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>beta</string>
+		<string>production</string>
+	</array>
+
+	<key>description</key>
+	<string>Allows "everyone" to manage Time Machine and TM Preferences</string>
+    	<key>display_name</key>
+    	<string>Open Time Machine</string>
+    	<key>name</key>
+    	<string>unlockTimeMachine</string>
+    	<key>installer_type</key>
+    	<string>nopkg</string>
+
+	<key>requires</key>
+		<string>OpenSysPrefs</string>
+
+	<key>installcheck_script</key>
+	<string>#!/usr/bin/env python
+
+# Installation Check Script for Munki Payload Free plist
+# Scripting sequence for authorizing all users to manage TimeMachine Preferences via System Preferences App
+# Script template provided by Grahm Gilbert via GitHub - github.com/grahamgilbert/macscripts
+
+import subprocess
+import sys
+import plistlib
+
+# Group Date and Time  System Preferences should be opened to
+group = 'everyone'
+
+# Modify final key in the array to change which authorizationdb permission value is being modified
+command = ['/usr/bin/security', 'authorizationdb', 'read', 'system.preferences.timemachine']
+
+task = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+(out, err) = task.communicate()
+
+formatted = plistlib.readPlistFromString(out)
+# if group matches, exit 1 as we don't need to install
+if formatted['group'] == group:
+    sys.exit(1)
+else:
+    # if it doesn't we're exiting with 0 as we need to perform the install
+    sys.exit(0)</string>
+	<key>minimum_os_version</key>
+	<string>10.9.0</string>
+	<key>postinstall_script</key>
+	<string>#!/usr/bin/env python
+
+# Installation Check Script for Munki Payload Free plist
+# Scripting sequence for authorizing all users to manage TimeMachine Preferences via System Preferences App
+# Script template provided by Grahm Gilbert via GitHub - github.com/grahamgilbert/macscripts
+
+import subprocess
+import sys
+import plistlib
+
+# Group System Preferences should be opened to
+group = 'everyone'
+
+# Modify final key in the array to change which authorizationdb permission value is being modified
+command = ['/usr/bin/security', 'authorizationdb', 'read', 'system.preferences.timemachine']
+
+task = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+(out, err) = task.communicate()
+formatted = plistlib.readPlistFromString(out)
+
+# If the group doesn't match, we're going to correct it.
+if formatted['group'] != group:
+    formatted['group'] = group
+    # Convert back to plist
+    input_plist = plistlib.writePlistToString(formatted)
+    
+    # Write the plist back to the authorizationdb
+    # Modify final key in the array to change which authorizationdb permission value is being modified
+    command = ['/usr/bin/security', 'authorizationdb', 'write', 'system.preferences.timemachine']
+    task = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    (out, err) = task.communicate(input=input_plist)</string>
+	<key>uninstall_method</key>
+	<string>uninstall_script</string>
+	<key>uninstallable</key>
+  		<true/>
+	<key>uninstall_script</key>
+	<string>#!/usr/bin/env python
+
+# Uninstall Script for Munki Payload Free plist
+# Scripting sequence for authorizing all users to manage TimeMachine Preferences via System Preferences App
+# Script template provided by Grahm Gilbert via GitHub - github.com/grahamgilbert/macscripts
+
+import subprocess
+import sys
+import plistlib
+
+# Set the group back to admin
+group = 'admin'
+
+# Modify final key in the array to change which authorizationdb permission value is being modified
+command = ['/usr/bin/security', 'authorizationdb', 'read', 'system.preferences.timemachine']
+
+task = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+(out, err) = task.communicate()
+formatted = plistlib.readPlistFromString(out)
+
+# If the group doesn't match, we're going to correct it.
+if formatted['group'] != group:
+    formatted['group'] = group
+    # Convert back to plist
+    input_plist = plistlib.writePlistToString(formatted)
+    # Write the plist back to the authorizationdb
+    # Modify final key in the array to change which authorizationdb permission value is being modified
+    command = ['/usr/bin/security', 'authorizationdb', 'write', 'system.preferences.timemachine']
+    task = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    (out, err) = task.communicate(input=input_plist)</string>
+	<key>version</key>
+	<string>0.1</string>
+</dict>
+</plist>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Livescribe Helper is a companion application for Mac and Windows that is designed to complete the initial activation and firmware update for your Livescribe wifi smartpen.  Future smartpen updates will be deployed wirelessly.</string>
+	<key>display_name</key>
+	<string>Livescribe Helper</string>
+	<key>installed_size</key>
+	<integer>3100</integer>
+	<key>installer_item_hash</key>
+	<string>df9e710b78f1e4761e230abfbe0d4c956afc78af5eaa2286121b3d505d8e0a07</string>
+	<key>installer_item_location</key>
+	<string>apps/user_utilities/LivescribeHelper_Mac_1.2.0.dmg</string>
+	<key>installer_item_size</key>
+	<integer>3167</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>LivescribeHelper</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>1912</integer>
+			<key>packageid</key>
+			<string>com.livescribe.livescribeHelper.LivescribeHelper.pkg</string>
+			<key>version</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>0</integer>
+			<key>packageid</key>
+			<string>com.livescribe.livescribeHelper.postflight.pkg</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>0</integer>
+			<key>packageid</key>
+			<string>com.livescribe.livescribeHelper.preflight.pkg</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>1188</integer>
+			<key>packageid</key>
+			<string>com.livescribe.livescribeHelper.PenCommInstaller.pkg</string>
+			<key>version</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.2.0</string>
+</dict>
+</plist>

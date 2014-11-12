@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>RestartAction</key>
+	<string>RecommendRestart</string>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string></string>
+	<key>display_name</key>
+	<string>Woodcock Johnson III</string>
+	<key>installed_size</key>
+	<integer>15917</integer>
+	<key>installer_item_hash</key>
+	<string>78cafd6a140d5e331080fc4b85864fe41371ae95a15ee2f1cfb9f3f002c5cbea</string>
+	<key>installer_item_location</key>
+	<string>apps/assessment_tools/WJ_Compuscore_III.dmg</string>
+	<key>installer_item_size</key>
+	<integer>9815</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>WoodcockJohnson_III</string>
+	
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>rpc.software.wjiiinu.30</string>
+			<key>CFBundleName</key>
+			<string>WJ III NU</string>
+			<key>CFBundleShortVersionString</key>
+			<string>1.0</string>
+			<key>path</key>
+			<string>/Applications/Riverside Publishing/WJ III NU/WJ III NU.app</string>
+			<key>type</key>
+			<string>application</string>
+		</dict>
+	</array>
+
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>WJ III NU Installer.pkg</string>
+			<key>name</key>
+			<string>WJ III Normative Update</string>
+			<key>packageid</key>
+			<string>rpc.software.wjiiinu.30</string>
+			<key>version</key>
+			<string>3.0</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>3.0</string>
+</dict>
+</plist>

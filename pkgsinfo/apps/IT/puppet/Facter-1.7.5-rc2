@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+		<string>beta</string>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string>Facter is a lightweight program that gathers basic node information about the hardware and operating system.</string>
+	<key>display_name</key>
+	<string>Facter by Puppet Labs</string>
+	<key>installed_size</key>
+	<integer>298</integer>
+	<key>installer_item_hash</key>
+	<string>3883e70e3920f1dd57fbc2e9818f05eadd58c70f54fd1ed0d7061d474bd37b1a</string>
+	<key>installer_item_location</key>
+	<string>apps/IT/puppet/facter-1.7.5-rc2.dmg</string>
+	<key>installer_item_size</key>
+	<integer>89</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>Facter</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>298</integer>
+			<key>packageid</key>
+			<string>com.puppetlabs.facter</string>
+			<key>version</key>
+			<string>1.7.5-rc2</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.7.5-rc2</string>
+</dict>
+</plist>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>beta</string>
+		<string>testing</string>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string>Apple Remote Desktop is the best way to manage the Mac computers on your network. Distribute software, provide real-time online help to end users, create detailed software and hardware reports, and automate routine management tasks.</string>
+	<key>display_name</key>
+	<string>ARD Client</string>
+	<key>installed_size</key>
+	<integer>5657</integer>
+	<key>installer_item_hash</key>
+	<string>36ae71ea8259e040743061a8aebe7b6f69eb1e8d1b235dfbc52420eb98e27f5a</string>
+	<key>installer_item_location</key>
+	<string>apps/IT/RemoteDesktopClient371-3.7.1.0.1.1192644438.dmg</string>
+	<key>installer_item_size</key>
+	<integer>5148</integer>
+	<key>minimum_os_version</key>
+	<string>10.7.5</string>
+	<key>name</key>
+	<string>ARD-Client</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>8704</integer>
+			<key>packageid</key>
+			<string>com.apple.pkg.RemoteDesktopClient</string>
+			<key>version</key>
+			<string>3.7.1.0.1.1192644438</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>3.7.1.0.1.1192644438</string>
+</dict>
+</plist>

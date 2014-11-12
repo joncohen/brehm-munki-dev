@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Installs the Admin 1301 ColorCube Phaser to this computer with the PPD driver file for the 8750DN</string>
+	<key>display_name</key>
+	<string>Install Admin 1301 Xerox</string>
+	<key>installed_size</key>
+	<integer>24</integer>
+	<key>installer_item_hash</key>
+	<string>ecfb1244a0fe9a35b330e6fe12046d93a9c4361cb3fe6c5ffd616fbc0f1c0c8e</string>
+	<key>installer_item_location</key>
+	<string>apps/printers/device_installers/Install Admin 1301 Xerox.dmg</string>
+	<key>installer_item_size</key>
+	<integer>19</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>Install Admin 1301 Xerox</string>
+	
+	<key>requires</key>
+	<string>Generic_PCLDriver_Installer</string>
+
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>Install Admin 1301 Xerox.pkg</string>
+			<key>installed_size</key>
+			<integer>24</integer>
+			<key>name</key>
+			<string>Install Admin 1301 Xerox</string>
+			<key>packageid</key>
+			<string>com.brehm.pkg.Install Admin 1301 Xerox</string>
+			<key>version</key>
+			<string>0.2.0</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>/etc/cups/printers_deployment/uninstalls/Admin_1301_Phaser.sh</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>0.2.0</string>
+</dict>
+</plist>

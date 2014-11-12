@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>jonathan.cohen</string>
+		<key>creation_date</key>
+		<date>2014-09-30T17:36:19Z</date>
+		<key>munki_version</key>
+		<string>2.0.0.2229</string>
+		<key>os_version</key>
+		<string>10.9.4</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>beta</string>
+		<string>testing</string>
+	</array>
+	<key>category</key>
+	<string>System Tools</string>
+	<key>description</key>
+	<string>Core command-line tools used by munki.</string>
+	<key>developer</key>
+	<string>Munki</string>
+	<key>display_name</key>
+	<string>Munki Core Tools</string>
+	<key>installed_size</key>
+	<integer>588</integer>
+	<key>installer_item_hash</key>
+	<string>1606e1c46394ed7351bbbcb869324812921b8ddf9c64f80c88550010a9daabda</string>
+	<key>installer_item_location</key>
+	<string>apps/IT/munki/core/munkitools_core-1.0.0.1888.0.dmg</string>
+	<key>installer_item_size</key>
+	<integer>140</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>munkitools_core</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>munkitools_core-1.0.0.1888.0.pkg</string>
+			<key>installed_size</key>
+			<integer>588</integer>
+			<key>packageid</key>
+			<string>com.googlecode.munki.core</string>
+			<key>version</key>
+			<string>1.0.0.1888.0</string>
+		</dict>
+	</array>
+	<key>requires</key>
+	<string>munki-launchd</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.0.0.1888.0</string>
+</dict>
+</plist>

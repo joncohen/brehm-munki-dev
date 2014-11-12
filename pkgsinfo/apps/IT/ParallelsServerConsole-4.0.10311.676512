@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Parallels Management Console provides the IT professional with a graphical user interface to individually manage Parallels Server 4.0 for Mac Bare Metal Edition servers and their virtual machines.  Supports up to 5 physical servers.</string>
+	<key>display_name</key>
+	<string>Parallels Management Console</string>
+	<key>installed_size</key>
+	<integer>72724</integer>
+	<key>installer_item_hash</key>
+	<string>32c6a94b4f79474c5b18dad6bb296f1641d863d080dcad38a0d6f7843af42f9b</string>
+	<key>installer_item_location</key>
+	<string>apps/IT/ParallelsManagementConsole-parallels-en_US-4.0.10311.676512.dmg</string>
+	<key>installer_item_size</key>
+	<integer>44365</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>ParallelsServerConsole</string>
+
+		<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.parallels.server.management-console-standalone</string>
+			<key>CFBundleName</key>
+			<string>Management Console</string>
+			<key>CFBundleShortVersionString</key>
+			<string>4.0</string>
+			<key>path</key>
+			<string>/Applications/Parallels Management Console .app</string>
+			<key>type</key>
+			<string>application</string>
+		</dict>
+	</array>
+
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>Parallels Management Console Standalone.pkg</string>
+			<key>installed_size</key>
+			<integer>72724</integer>
+			<key>packageid</key>
+			<string>com.parallels.pkg.pmc</string>
+			<key>version</key>
+			<string>4.0.10311.676512</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>4.0.10311.676512</string>
+</dict>
+</plist>

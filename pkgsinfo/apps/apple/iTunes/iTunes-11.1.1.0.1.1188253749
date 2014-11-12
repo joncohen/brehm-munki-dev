@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>The iTunes player keeps all your music, and movies all in one place. Instead of going through stacks and stacks of CDs, you can import them into iTunes and quickly browse your whole collection.</string>
+	<key>display_name</key>
+	<string>iTunes</string>
+	<key>installed_size</key>
+	<integer>373064</integer>
+	<key>installer_item_hash</key>
+	<string>1a6ebb51e58440dc97edf69081b610596fb03bece520542868a39af5072b8505</string>
+	<key>installer_item_location</key>
+	<string>apps/apple/iTunes/iTunes11.1.1.dmg</string>
+	<key>installer_item_size</key>
+	<integer>220321</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>iTunes</string>
+	
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>2613</integer>
+			<key>packageid</key>
+			<string>com.apple.pkg.CoreADI</string>
+			<key>version</key>
+			<string>1.9.0.0.1.1188253749</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>32217</integer>
+			<key>packageid</key>
+			<string>com.apple.pkg.CoreFP</string>
+			<key>version</key>
+			<string>2.5.16.0.1.1188253749</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>1670</integer>
+			<key>packageid</key>
+			<string>com.apple.pkg.iTunesAccess</string>
+			<key>version</key>
+			<string>11.1.1.0.1.1188253749</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>311463</integer>
+			<key>packageid</key>
+			<string>com.apple.pkg.iTunesX</string>
+			<key>version</key>
+			<string>11.1.1.0.1.1188253749</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>25101</integer>
+			<key>packageid</key>
+			<string>com.apple.pkg.MobileDevice</string>
+			<key>version</key>
+			<string>4.0.0.0.1.1217269835</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>11.1.1.0.1.1188253749</string>
+</dict>
+</plist>

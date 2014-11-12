@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Brother Printer Drivers for HL-4070CDW</string>
+	<key>display_name</key>
+	<string>Brother Printer Driver 450a</string>
+	<key>installed_size</key>
+	<integer>76168</integer>
+	<key>installer_item_hash</key>
+	<string>8666bec98c3153432f0a1c9e5d63077d9ff3e361911db91a1f9558c9063dbf6d</string>
+	<key>installer_item_location</key>
+	<string>apps/printers/brother/BrotherCLDrivers_450a-4.2.0.dmg</string>
+	<key>installer_item_size</key>
+	<integer>35735</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>Brother450a</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>58445</integer>
+			<key>packageid</key>
+			<string>com.apple.pkg.BrotherColorLaser</string>
+			<key>version</key>
+			<string>4.2.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>2605</integer>
+			<key>packageid</key>
+			<string>com.apple.pkg.BrotherCommon</string>
+			<key>version</key>
+			<string>4.2.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>4921</integer>
+			<key>packageid</key>
+			<string>com.apple.pkg.BrotherHelp</string>
+			<key>version</key>
+			<string>4.2.0</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>2690</integer>
+			<key>packageid</key>
+			<string>com.apple.pkg.BrotherICA</string>
+			<key>version</key>
+			<string>2.5.0000</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>7507</integer>
+			<key>packageid</key>
+			<string>com.apple.pkg.BrotherUtility</string>
+			<key>version</key>
+			<string>3.16.0001</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>4.2.0</string>
+</dict>
+</plist>

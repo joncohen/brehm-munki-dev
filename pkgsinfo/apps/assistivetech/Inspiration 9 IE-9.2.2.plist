@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>jonathan.cohen</string>
+		<key>creation_date</key>
+		<date>2014-08-21T02:59:53Z</date>
+		<key>munki_version</key>
+		<string>1.0.0.1864</string>
+		<key>os_version</key>
+		<string>10.9.4</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string></string>
+	<key>display_name</key>
+	<string>Uninstall Inspiration 9 IE</string>
+	<key>installer_item_hash</key>
+	<string>740c13e6e0ab6bc2b0624d21af24c4871ea3eed8c83ee0869ce6a35acd7ef76d</string>
+	<key>installer_item_location</key>
+	<string>apps/assistivetech/Inspiration 9 IE-9.2.2.dmg</string>
+	<key>installer_item_size</key>
+	<integer>149361</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.inspiration.inspiration</string>
+			<key>CFBundleName</key>
+			<string>Inspiration 9 IE</string>
+			<key>CFBundleShortVersionString</key>
+			<string>9.2.2</string>
+			<key>CFBundleVersion</key>
+			<string>34</string>
+			<key>minosversion</key>
+			<string>10.6.6</string>
+			<key>path</key>
+			<string>/Applications/Inspiration 9 IE.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>Inspiration 9 IE.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.6.6</string>
+	<key>name</key>
+	<string>Inspiration 9 IE</string>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>9.2.2</string>
+</dict>
+</plist>

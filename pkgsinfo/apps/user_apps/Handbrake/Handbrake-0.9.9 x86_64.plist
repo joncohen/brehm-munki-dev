@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>jonathan.cohen</string>
+		<key>creation_date</key>
+		<date>2014-11-10T19:07:55Z</date>
+		<key>munki_version</key>
+		<string>2.0.1.2253</string>
+		<key>os_version</key>
+		<string>10.9.5</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>autopkg</string>
+	</array>
+	<key>category</key>
+	<string>AutoPkg Development</string>
+	<key>description</key>
+	<string>HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.</string>
+	<key>display_name</key>
+	<string>Handbrake</string>
+	<key>installer_item_hash</key>
+	<string>050f9d0d3a126b25d24cb4971062d66f4f975317b6586f8c288795c17a0c05f9</string>
+	<key>installer_item_location</key>
+	<string>apps/user_apps/Handbrake/Handbrake-0.9.9 x86_64.dmg</string>
+	<key>installer_item_size</key>
+	<integer>8852</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>fr.handbrake.HandBrake</string>
+			<key>CFBundleName</key>
+			<string>HandBrake</string>
+			<key>CFBundleShortVersionString</key>
+			<string>0.9.9 x86_64</string>
+			<key>CFBundleVersion</key>
+			<string>2013051800</string>
+			<key>minosversion</key>
+			<string>10.6</string>
+			<key>path</key>
+			<string>/Applications/HandBrake.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>HandBrake.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.6</string>
+	<key>name</key>
+	<string>Handbrake</string>
+	<key>unattended_install</key>
+	<true/>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>0.9.9 x86_64</string>
+</dict>
+</plist>

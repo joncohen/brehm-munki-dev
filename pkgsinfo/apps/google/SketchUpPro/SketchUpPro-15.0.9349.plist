@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>jonathan.cohen</string>
+		<key>creation_date</key>
+		<date>2014-11-10T20:12:38Z</date>
+		<key>munki_version</key>
+		<string>2.0.1.2253</string>
+		<key>os_version</key>
+		<string>10.9.5</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>blocking_applications</key>
+	<array>
+		<string>SketchUp.app</string>
+		<string>Style Builder.app</string>
+		<string>Layout.app</string>
+	</array>
+	<key>catalogs</key>
+	<array>
+		<string>autopkg</string>
+	</array>
+	<key>category</key>
+		<string>AutoPkg Development</string>
+	<key>description</key>
+	<string>SketchUp Pro is the most intuitive way to design, document and communicate your ideas in 3D. http://www.sketchup.com/products/sketchup-pro</string>
+	<key>display_name</key>
+	<string>SketchUpPro</string>
+	<key>installed_size</key>
+	<integer>378468</integer>
+	<key>installer_item_hash</key>
+	<string>edb84e91bab31e0154049ed164ae12220c9928b8686ceb9d5fb600117ea75d45</string>
+	<key>installer_item_location</key>
+	<string>apps/google/SketchUpPro/SketchUpPro-15.0.9349.pkg</string>
+	<key>installer_item_size</key>
+	<integer>123056</integer>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.sketchup.SketchUp.2015</string>
+			<key>CFBundleName</key>
+			<string>SketchUp</string>
+			<key>CFBundleShortVersionString</key>
+			<string>15.0</string>
+			<key>CFBundleVersion</key>
+			<string>15.0.9349</string>
+			<key>minosversion</key>
+			<string>10.8.0</string>
+			<key>path</key>
+			<string>/Applications/SketchUp 2015/SketchUp.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.sketchup.LayOut.2015</string>
+			<key>CFBundleShortVersionString</key>
+			<string>15.0</string>
+			<key>CFBundleVersion</key>
+			<string>15.0.9349</string>
+			<key>minosversion</key>
+			<string>10.8.0</string>
+			<key>path</key>
+			<string>/Applications/SketchUp 2015/Layout.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.sketchup.StyleBuilder.2015</string>
+			<key>CFBundleName</key>
+			<string>Style Builder</string>
+			<key>CFBundleShortVersionString</key>
+			<string>15.0</string>
+			<key>CFBundleVersion</key>
+			<string>15.0.9349</string>
+			<key>minosversion</key>
+			<string>10.8.0</string>
+			<key>path</key>
+			<string>/Applications/SketchUp 2015/Style Builder.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.8</string>
+	<key>name</key>
+	<string>SketchUpPro</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>378468</integer>
+			<key>packageid</key>
+			<string>com.sketchup.SketchUp.pkg</string>
+			<key>version</key>
+			<string>15.0.9349</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>15.0.9349</string>
+</dict>
+</plist>

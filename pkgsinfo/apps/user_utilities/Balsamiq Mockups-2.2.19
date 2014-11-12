@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Balsamiq Mockups is a rapid wireframing tool that helps you Work Faster &amp; Smarter. It reproduces the experience of sketching on a whiteboard, but using a computer.</string>
+	<key>display_name</key>
+	<string>Balsamiq Mockups Tool</string>
+	<key>installer_item_hash</key>
+	<string>f31938dc426cf3c7e4ccc3094f92d4af327b3fb368e27b6094e837a4bbbae4a8</string>
+	<key>installer_item_location</key>
+	<string>apps/user_utilities/MockupsForDesktop-2.2.19.dmg</string>
+	<key>installer_item_size</key>
+	<integer>29433</integer>
+	<key>installer_type</key>
+	<string>copy_from_dmg</string>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>BalsamiqMockupsForDesktop.EDE15CF69E11F7F7D45B5430C7D37CC6C3545E3C.1</string>
+			<key>CFBundleShortVersionString</key>
+			<string>2.2.19</string>
+			<key>minosversion</key>
+			<string>10.6</string>
+			<key>path</key>
+			<string>/Applications/Balsamiq Mockups.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>items_to_copy</key>
+	<array>
+		<dict>
+			<key>destination_path</key>
+			<string>/Applications</string>
+			<key>source_item</key>
+			<string>Balsamiq Mockups.app</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.6</string>
+	<key>name</key>
+	<string>Balsamiq Mockups</string>
+	<key>uninstall_method</key>
+	<string>remove_copied_items</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>2.2.19</string>
+</dict>
+</plist>

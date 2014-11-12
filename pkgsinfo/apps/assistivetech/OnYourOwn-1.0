@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string></string>
+	<key>display_name</key>
+	<string>On Your Own Coast to Coast</string>
+	<key>installed_size</key>
+	<integer>191748</integer>
+	<key>installer_item_hash</key>
+	<string>c6fe630e5503a61421f13ab271a8d9601e80d08acd93c47598c175cfdb65f535</string>
+	<key>installer_item_location</key>
+	<string>apps/assistivetech/OnYourOwn-C2C.dmg</string>
+	<key>installer_item_size</key>
+	<integer>84122</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>OnYourOwn</string>
+
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.director.projector</string>
+			<key>CFBundleName</key>
+			<string>launch</string>
+			<key>CFBundleShortVersionString</key>
+			<string>11.5.9r629</string>
+			<key>path</key>
+			<string>/Applications/On Your Own/launch.osx.app</string>
+			<key>type</key>
+			<string>application</string>
+		</dict>
+	</array>
+	
+	<key>requires</key>
+	<array>
+     		<string>Shockwave</string>
+    	</array>
+
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>OYO.pkg</string>
+			<key>installed_size</key>
+			<integer>191748</integer>
+			<key>name</key>
+			<string>OYO</string>
+			<key>packageid</key>
+			<string>com.mygreatcompany.pkg.OYO</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.0</string>
+</dict>
+</plist>

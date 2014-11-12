@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>MathType is a powerful interactive equation editor for Windows and Macintosh that lets you create mathematical notation for word processing, web pages, desktop publishing, presentations, elearning, and for TeX, LaTeX, and MathML documents.</string>
+	<key>display_name</key>
+	<string>MathType 6.7d</string>
+	<key>installed_size</key>
+	<integer>25656</integer>
+	<key>installer_item_hash</key>
+	<string>fd8a45c97ad76ff073024cb236230907d091d8318f217c12ce2036a44f0f67ab</string>
+	<key>installer_item_location</key>
+	<string>apps/user_utilities/MathTypeMac6.7dInstaller.dmg</string>
+	<key>installer_item_size</key>
+	<integer>13166</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>MathType</string>
+
+
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.dessci.MathType</string>
+			<key>CFBundleName</key>
+			<string>MathType</string>
+			<key>CFBundleShortVersionString</key>
+			<string>6.7d</string>
+			<key>path</key>
+			<string>/Applications/MathType 6/MathType.app</string>
+			<key>type</key>
+			<string>application</string>
+		</dict>
+	</array>
+
+
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>mathtype.pkg</string>
+			<key>installed_size</key>
+			<integer>25656</integer>
+			<key>packageid</key>
+			<string>com.DesignScience.mathtype67D.MathType.pkg</string>
+			<key>version</key>
+			<string>1.30</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.30</string>
+</dict>
+</plist>

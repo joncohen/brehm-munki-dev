@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>RestartAction</key>
+	<string>RequireRestart</string>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>jonathan.cohen</string>
+		<key>creation_date</key>
+		<date>2014-10-20T13:37:15Z</date>
+		<key>munki_version</key>
+		<string>2.0.0.2229</string>
+		<key>os_version</key>
+		<string>10.9.4</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>beta</string>
+		<string>testing</string>
+	</array>
+	<key>category</key>
+	<string>System Tools</string>
+	<key>description</key>
+	<string>OS X Security Update</string>
+	<key>developer</key>
+	<string>Apple</string>
+	<key>display_name</key>
+	<string>Security Update 2014-005</string>
+	<key>installed_size</key>
+	<integer>11378</integer>
+	<key>installer_item_hash</key>
+	<string>a1090b0434545e18043396976393d4802ddf9be6ce50c5ea24ec9804b9317281</string>
+	<key>installer_item_location</key>
+	<string>apps/apple/core_updates/SecUpd2014-005Mavericks-1.0.0.0.1.1306847324.dmg</string>
+	<key>installer_item_size</key>
+	<integer>7004</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>SecUpd2014-005Mavericks</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>17506</integer>
+			<key>packageid</key>
+			<string>com.apple.pkg.update.security.10.9.5.13F1030.2014.005</string>
+			<key>version</key>
+			<string>1.0.0.0.1.1306847324</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.0.0.0.1.1306847324</string>
+</dict>
+</plist>

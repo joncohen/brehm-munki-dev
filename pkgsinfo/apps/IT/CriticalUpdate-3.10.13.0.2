@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+        <key>autoremove</key>
+        <false/>
+        <key>catalogs</key>
+        <array>
+                <string>testing</string>
+        </array>
+        <key>description</key>
+        <string>This is a critical System update for Brehm Preparatory School</string>
+        <key>display_name</key>
+        <string>Critical System Update 310132</string>
+        <key>installer_type</key>
+        <string>nopkg</string>
+        <key>name</key>
+        <string>Critical System Update 310132</string>
+
+	<key>installcheck_script</key>
+	<string>#!/bin/sh
+
+# Based on 2010 Walter Meyer SUNY Purchase College (c)
+# Modified by Nick McSpadden, 2013
+# Modified for Wireless Networks by Jonathan Cohen, Brehm Preparatory School 2013
+
+# Script to install and setup Wireless Networks on a Mac OS X system in a "Munki-Friendly" way.
+
+# Variables. Edit these.
+
+NEWSSID="BREHM_INTRANET"
+WIFIDEVICE=`networksetup -listnetworkserviceorder | grep -w Wi-Fi | grep Hardware | awk '{print substr ($5, 0, 3)}'`
+SSIDSTATUS="0"
+WIFISECURITY="WPA2"
+SSIDPWD="N##ds of the 0n3"
+currentVersion="0.2"
+
+### Determine if receipt is installed ###
+if [ -f /private/etc/installedNetworks/deployment/receipts/$NEWSSID.plist ]; then
+	storedVersion=`/usr/libexec/PlistBuddy -c "Print :version" /private/etc/installedNetworks/deployment/receipts/$NEWSSID.plist`
+        echo "Stored version: $storedVersion"
+else
+        storedVersion="0"
+fi
+
+versionComparison=`echo "$storedVersion &lt; $currentVersion" | bc -l`
+
+# This will be 0 if the current receipt is greater than or equal to current version of the script
+
+### Printer Install ###
+# If the SSID already exists (returns 0), we don't need to reinstall it.
+if [ $? -eq 0 ]; then
+        if [ $versionComparison == 0 ]; then
+                # We are at the current or greater version
+              exit 1
+        fi
+
+    # We are of lesser version, and therefore we should delete the printer and reinstall.
+	
+    security delete-generic-password -l $NEWSSID "/Library/Keychains/System.keychain"
+    networksetup -removepreferredwirelessnetwork $WIFIDEVICE $NEWSSID
+    
+exit 0
+
+fi</string>
+
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>postinstall_script</key>
+	<string>#!/bin/sh
+
+# Based on 2010 Walter Meyer SUNY Purchase College (c)
+# Modified by Nick McSpadden, 2013
+# Modified for Wireless Networks by Jonathan Cohen, Brehm Preparatory School 2013
+
+# Script to install and setup printers on a Mac OS X system in a "Munki-Friendly" way.
+# Make sure to install the required drivers first!
+
+# Variables. Edit these.
+NEWSSID="BREHM_INTRANET"
+WIFIDEVICE=`networksetup -listnetworkserviceorder | grep -w Wi-Fi | grep Hardware | awk '{print substr ($5, 0, 3)}'`
+SSIDSTATUS="0"
+WIFISECURITY="WPA2"
+SSIDPWD="N##ds of the 0n3"
+currentVersion="0.2"
+
+### Determine if receipt is installed ###
+if [ -f /private/etc/installedNetworks/deployment/receipts/$NEWSSID.plist ]; then
+    storedVersion=`/usr/libexec/PlistBuddy -c "Print :version" /private/etc/installedNetworks/deployment/receipts/$NEWSSID.plist`
+        echo "Stored version: $storedVersion"
+else
+        storedVersion="0"
+fi
+
+versionComparison=`echo "$storedVersion &lt; $currentVersion" | bc -l`
+
+# This will be 0 if the current receipt is greater than or equal to current version of the script
+
+### Printer Install ###
+# If the SSID already exists (returns 0), we don't need to reinstall it.
+if [ $? -eq 0 ]; then
+        if [ $versionComparison == 0 ]; then
+                # We are at the current or greater version
+              exit 1
+        fi
+
+    # We are of lesser version, and therefore we should delete the printer and reinstall.
+	
+    security delete-generic-password -l $NEWSSID "/Library/Keychains/System.keychain"
+    networksetup -removepreferredwirelessnetwork $WIFIDEVICE $NEWSSID
+    
+fi
+
+# Now we can install the printer.
+networksetup -addpreferredwirelessnetworkatindex $WIFIDEVICE $NEWSSID $SSIDSTATUS $WIFISECURITY $SSIDPWD
+
+# Create a receipt for the printer
+mkdir -p /private/etc/installedNetworks/deployment/receipts
+/usr/libexec/PlistBuddy -c "Add :version string" /private/etc/installedNetworks/deployment/receipts/$NEWSSID.plist
+/usr/libexec/PlistBuddy -c "Set :version $currentVersion" /private/etc/installedNetworks/deployment/receipts/$NEWSSID.plist
+
+# Permission the directories properly.
+chown -R root:_lp /private/etc/installedNetworks/deployment
+chmod -R 700 /private/etc/installedNetworks/deployment
+
+exit 0</string>
+
+	<key>uninstall_method</key>
+	<string>uninstall_script</string>
+	<key>uninstall_script</key>
+	<string>#!/bin/sh
+    
+NEWSSID="BREHM_INTRANET"
+WIFIDEVICE=`networksetup -listnetworkserviceorder | grep -w Wi-Fi | grep Hardware | awk '{print substr ($5, 0, 3)}'`
+SSIDSTATUS="0"
+WIFISECURITY="WPA2"
+SSIDPWD="N##ds of the 0n3"
+currentVersion="0.2"
+
+security delete-generic-password -l $NEWSSID "/Library/Keychains/System.keychain"
+networksetup -removepreferredwirelessnetwork $WIFIDEVICE $NEWSSID
+rm -f /private/etc/installedNetworks/deployment/receipts/$NEWSSID.plist</string>
+
+<key>uninstallable</key>
+        <true/>
+        <key>version</key>
+        <string>0.2</string>
+</dict>
+</plist>
+

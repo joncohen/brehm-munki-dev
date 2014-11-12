@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string>License Files for Brehm Prep School</string>
+	<key>display_name</key>
+	<string>Sketchpad License</string>
+	<key>installed_size</key>
+	<integer>24</integer>
+	<key>installer_item_hash</key>
+	<string>95ffe045cad1334bf3d57cc45f1144ca1aacc08b2af71ed82dbbdb867c01fbfc</string>
+	<key>installer_item_location</key>
+	<string>apps/assistivetech/SketchPadLicense.dmg</string>
+	<key>installer_item_size</key>
+	<integer>19</integer>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>name</key>
+	<string>SketchpadLicense</string>
+
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>md5checksum</key>
+			<string>33ca838108bb5fc8e68075b40c023ca3</string>
+			<key>path</key>
+			<string>/brehm/program_License_Data/The Geometer's Sketchpad/licenseK.plist</string>
+			<key>type</key>
+			<string>file</string>
+		</dict>
+		<dict>
+			<key>md5checksum</key>
+			<string>41b7e042489086225b56f062aec92e84</string>
+			<key>path</key>
+			<string>/brehm/program_License_Data/The Geometer's Sketchpad/reference_licenseK.plist</string>
+			<key>type</key>
+			<string>file</string>
+		</dict>
+	</array>
+
+
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>SketchpadLicense.pkg</string>
+			<key>installed_size</key>
+			<integer>24</integer>
+			<key>name</key>
+			<string>SketchpadLicense</string>
+			<key>packageid</key>
+			<string>com.mygreatcompany.pkg.SketchpadLicense</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+
+	<key>postinstall_script</key>
+	<string>#!/bin/sh
+	
+	cp -R /brehm/program_License_Data/The\ Geometer\'s\ Sketchpad /Library/Application\ Support/
+
+	</string>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.0</string>
+</dict>
+</plist>

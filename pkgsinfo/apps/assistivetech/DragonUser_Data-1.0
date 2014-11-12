@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string></string>
+	<key>display_name</key>
+	<string>DragonUser_Data</string>
+	<key>installed_size</key>
+	<integer>1365332</integer>
+	<key>installer_item_hash</key>
+	<string>d8f321d0ec6ad30ee0a17d6f07dcbe43c6599f9fe5d9ec04822019498737af2e</string>
+	<key>installer_item_location</key>
+	<string>apps/assistivetech/DragonUser_Data-Install.dmg</string>
+	<key>installer_item_size</key>
+	<integer>1259740</integer>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.dragon.Speech_Engine_Data_v2</string>
+			<key>CFBundleName</key>
+			<string>Speech Engine Data v2</string>
+			<key>CFBundleShortVersionString</key>
+			<string>1.0</string>
+			<key>path</key>
+			<string>/brehm/program_data/DragonDictate/Dragon/Speech Engine Data v2.app</string>
+			<key>type</key>
+			<string>application</string>
+		</dict>
+	</array>
+	<key>minimum_os_version</key>
+	<string>10.4.0</string>
+	<key>maximum_os_version</key>
+	<string>10.7.0</string>
+	<key>name</key>
+	<string>DragonUser_Data</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>DragonUser_Data.pkg</string>
+			<key>installed_size</key>
+			<integer>1365332</integer>
+			<key>name</key>
+			<string>DragonUser_Data</string>
+			<key>packageid</key>
+			<string>com.mygreatcompany.pkg.DragonUser_Data</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.0</string>
+</dict>
+</plist>
+

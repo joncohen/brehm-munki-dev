@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>james.kelley</string>
+		<key>creation_date</key>
+		<date>2014-09-16T14:49:46Z</date>
+		<key>munki_version</key>
+		<string>1.0.0.1864</string>
+		<key>os_version</key>
+		<string>10.9.4</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>beta</string>
+	</array>
+	<key>description</key>
+	<string>Java allows you to play online games, chat with people around the world, calculate your mortgage interest, and view images in 3D, just to name a few. It's also integral to the intranet applications and other e-business solutions that are the foundation of corporate computing.</string>
+	<key>display_name</key>
+	<string>Java 7 Update</string>
+	<key>installed_size</key>
+	<integer>145352</integer>
+	<key>installer_item_hash</key>
+	<string>fcd0f9504ed3dabccd2f7db03ad79f919c057ce3fe6b70d7c11ad55a15b18bdf</string>
+	<key>installer_item_location</key>
+	<string>apps/user_utilities/jre-7u67-macosx-x64-1.0.dmg</string>
+	<key>installer_item_size</key>
+	<integer>49707</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>Java 7 Update</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>145352</integer>
+			<key>packageid</key>
+			<string>com.oracle.jre</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>uninstall_script</string>
+            <key>uninstall_script</key>
+            <string>#!/bin/sh
+            # From http://www.java.com/en/download/help/mac_uninstall_java.xml
+            rm -fr /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin
+            pkgutil --forget com.oracle.jre
+            rm -rf /Library/PreferencePanes/JavaControlPanel.prefPane
+            </string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.0</string>
+</dict>
+</plist>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>RestartAction</key>
+	<string>RequireRestart</string>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>jonathan.cohen</string>
+		<key>creation_date</key>
+		<date>2014-10-03T18:38:10Z</date>
+		<key>munki_version</key>
+		<string>2.0.0.2229</string>
+		<key>os_version</key>
+		<string>10.9.4</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>category</key>
+	<string>System Tools</string>
+	<key>description</key>
+	<string>Munki is a set of tools that, used together with a webserver-based repository of packages and package metadata, can be used by OS X administrators to manage software installs (and in many cases removals) on OS X client machines.</string>
+	<key>developer</key>
+	<string>Munki</string>
+	<key>display_name</key>
+	<string>Munki - Managed software installation for OS X</string>
+	<key>installed_size</key>
+	<integer>4941</integer>
+	<key>installer_item_hash</key>
+	<string>8f751191189923dcb567b1ee9b6b5bbacfa94548726cfd98decacfcc0411753e</string>
+	<key>installer_item_location</key>
+	<string>apps/IT/munki/munkitools/munkitools-2.0.0.2234.pkg</string>
+	<key>installer_item_size</key>
+	<integer>3344</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>munkitools</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>130</integer>
+			<key>packageid</key>
+			<string>com.googlecode.munki.admin</string>
+			<key>version</key>
+			<string>2.0.0.2233</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>4223</integer>
+			<key>packageid</key>
+			<string>com.googlecode.munki.app</string>
+			<key>version</key>
+			<string>4.0.2228</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>579</integer>
+			<key>packageid</key>
+			<string>com.googlecode.munki.core</string>
+			<key>version</key>
+			<string>2.0.0.2233</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>9</integer>
+			<key>packageid</key>
+			<string>com.googlecode.munki.launchd</string>
+			<key>version</key>
+			<string>2.0.0.1969</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>2.0.0.2234</string>
+</dict>
+</plist>

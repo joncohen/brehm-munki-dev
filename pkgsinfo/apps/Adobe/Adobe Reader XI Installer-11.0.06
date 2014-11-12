@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+<key>preinstall_script</key>
+        <string>#!/bin/sh
+	if [ -e "/Applications/Adobe Reader.app" ]; then
+        rm -r "/Applications/Adobe Reader.app"
+	fi
+	exit 0
+        
+	</string>
+
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>beta</string>
+		<string>testing</string>
+		<string>production</string>
+	</array>
+	<key>description</key>
+	<string>Adobe Reader software is the free trusted standard for reliably viewing, printing, and annotating PDF documents. It’s the only PDF file viewer that can open and interact with all types of PDF content, including forms and multimedia.</string>
+	<key>display_name</key>
+	<string>Adobe Reader XI</string>
+	<key>installed_size</key>
+	<integer>414935</integer>
+	<key>installer_item_hash</key>
+	<string>5d057ea44692036d6b7b2eb3b7f906baac23aca95c1b417535a33527a252929a</string>
+	<key>installer_item_location</key>
+	<string>apps/Adobe/AdbeRdr11006_en_US-11.0.06.dmg</string>
+	<key>installer_item_size</key>
+	<integer>78846</integer>
+	<key>minimum_os_version</key>
+	<string>10.5.0</string>
+	<key>name</key>
+	<string>Adobe Reader XI Installer</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>405567</integer>
+			<key>packageid</key>
+			<string>com.adobe.acrobat.reader.11006.reader.app.pkg.en_US</string>
+			<key>version</key>
+			<string>11.0.06</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>8228</integer>
+			<key>packageid</key>
+			<string>com.adobe.acrobat.reader.11006.reader.appsupport.pkg.en_US</string>
+			<key>version</key>
+			<string>11.0.06</string>
+		</dict>
+		<dict>
+			<key>installed_size</key>
+			<integer>1140</integer>
+			<key>packageid</key>
+			<string>com.adobe.acrobat.reader.11006.reader.browser.pkg.en_US</string>
+			<key>version</key>
+			<string>11.0.06</string>
+		</dict>
+	</array>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>11.0.06</string>
+</dict>
+</plist>

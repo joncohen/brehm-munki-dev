@@ -9,7 +9,7 @@
 		<key>created_by</key>
 		<string>jonathan.cohen</string>
 		<key>creation_date</key>
-		<date>2014-11-11T22:10:52Z</date>
+		<date>2014-11-12T18:56:30Z</date>
 		<key>munki_version</key>
 		<string>2.0.1.2253</string>
 		<key>os_version</key>
@@ -20,6 +20,8 @@
 	<key>catalogs</key>
 	<array>
 		<string>beta</string>
+		<string>testing</string>
+		<string>production</string>
 	</array>
 	<key>category</key>
 	<string>System Tools</string>
@@ -28,26 +30,26 @@
 	<key>developer</key>
 	<string>Apple</string>
 	<key>display_name</key>
-	<string>OS X Update 10.9.5</string>
+	<string>OS X Update Combined</string>
 	<key>installed_size</key>
-	<integer>567672</integer>
+	<integer>1705572</integer>
 	<key>installer_item_hash</key>
-	<string>941cbfb1cd72f5ff61711a9e40f06a18b703b118f9124d75234663b8f29d1dc5</string>
+	<string>c9bb94cb2084e8e5691cd88ea9a597cc7aebda17e69d255bdfa7973f5646ac0a</string>
 	<key>installer_item_location</key>
-	<string>apps/apple/os/OSXUpd10.9.5-1.0.0.0.1.1306847324.dmg</string>
+	<string>apps/apple/os/OSXUpdCombo1095-1.0.0.0.1.1306847324.dmg</string>
 	<key>installer_item_size</key>
-	<integer>269077</integer>
+	<integer>959240</integer>
 	<key>minimum_os_version</key>
-	<string>10.9.4</string>
+	<string>10.5.0</string>
 	<key>name</key>
-	<string>Mavericks-1095-update</string>
+	<string>OSXUpdCombo1095</string>
 	<key>receipts</key>
 	<array>
 		<dict>
 			<key>installed_size</key>
-			<integer>567672</integer>
+			<integer>1705572</integer>
 			<key>packageid</key>
-			<string>delta</string>
+			<string>combo</string>
 			<key>version</key>
 			<string>1.0.0.0.1.1306847324</string>
 		</dict>

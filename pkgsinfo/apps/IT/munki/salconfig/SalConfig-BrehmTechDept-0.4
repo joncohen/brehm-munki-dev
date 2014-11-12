@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+        <key>autoremove</key>
+        <false/>
+        <key>catalogs</key>
+        <array>
+            <string>beta</string>
+            <string>testing</string>
+            <string>production</string>
+        </array>
+        <key>description</key>
+        
+        <string>This is a non-package-based installer for the Brehm Prep Technology Munki Monitor - Sal.  It requires the installation of the MunkiMonitoring Software - also deployed with Managed Software Updates</string>
+        
+        <key>display_name</key>
+        
+        <string>ConfigSal-BPSTechnology</string>
+        
+        <key>installer_type</key>
+        <string>nopkg</string>
+        <key>name</key>
+        <string>ConfigSal-BPSTechnology</string>
+
+        <key>requires</key>
+        <string>Enable_MunkiMonitor</string>
+
+    <key>installcheck_script</key>
+    <string>#!/bin/sh
+
+        # Based on 2010 Walter Meyer SUNY Purchase College (c)
+        # Modified by Nick McSpadden, 2013
+
+        # Variables. Edit these.
+
+            configname="InstallMonitor-BrehmTechDept"
+            address="http://sal-reports.brehm.org/"
+            machinegroupkey="3pmaixcdj2oqbg5h5ftau88znil3lm7y95pnwrnkiqtf8zbnnqzn8bhtgjkzyyt9k0kaejcrhgm9atq818t7s1r8jemuk8ciazg1r5bsr26x6hqqsw2zpgn7xt1x0m7f"
+
+        # Populate these options if you want to set specific options for the printer. E.g. duplexing installed, etc.
+            currentVersion="0.4"
+
+        ### Determine if receipt is installed ###
+            if [ -f /brehm/logs/configuration_receipts/$configname.plist ]; then
+                storedVersion=`/usr/libexec/PlistBuddy -c "Print :version" /brehm/logs/configuration_receipts/$configname.plist`
+                    echo "Stored version: $storedVersion"
+            else
+                    storedVersion="0"
+            fi
+
+            versionComparison=`echo "$storedVersion &lt; $currentVersion" | bc -l`
+
+        # This will be 0 if the current receipt is greater than or equal to current version of the script
+
+        ### Printer Install ###
+        # If the queue already exists (returns 0), we don't need to reinstall it.
+            if [ $? -eq 0 ]; then
+                    if [ $versionComparison == 0 ]; then
+                            # We are at the current or greater version
+                          exit 1
+                    fi
+
+                # We are of lesser version, and therefore we should delete the plist and reconfigure.
+
+                    # Delete the existing Sal configuration plist
+                        rm -f /Library/Preferences/com.grahamgilbert.plist
+
+                    # Direct client to the correct Sal server
+                        defaults write /Library/Preferences/com.grahamgilbert.sal ServerURL $address
+
+                    # Set the Machine Group key for BrehmStudents
+                        defaults write /Library/Preferences/com.grahamgilbert.sal key $machinegroupkey
+                exit 0
+
+            fi
+
+    </string>
+
+    <key>minimum_os_version</key>
+    <string>10.4.0</string>
+    <key>postinstall_script</key>
+    <string>#!/bin/sh
+
+        # Based on 2010 Walter Meyer SUNY Purchase College (c)
+        # Modified by Nick McSpadden, 2013
+
+        # Variables. Edit these.
+
+            configname="InstallMonitor-BrehmTechDept"
+            address="http://sal-reports.brehm.org/"
+            machinegroupkey="3pmaixcdj2oqbg5h5ftau88znil3lm7y95pnwrnkiqtf8zbnnqzn8bhtgjkzyyt9k0kaejcrhgm9atq818t7s1r8jemuk8ciazg1r5bsr26x6hqqsw2zpgn7xt1x0m7f"
+
+        # Populate these options if you want to set specific options for the printer. E.g. duplexing installed, etc.
+            currentVersion="0.4"
+
+        ### Determine if receipt is installed ###
+            if [ -f /brehm/logs/configuration_receipts/$configname.plist ]; then
+                    storedVersion=`/usr/libexec/PlistBuddy -c "Print :version" /brehm/logs/configuration_receipts/$configname.plist`
+                    echo "Stored version: $storedVersion"
+            else
+                    storedVersion="0"
+            fi
+
+            versionComparison=`echo "$storedVersion &lt; $currentVersion" | bc -l`
+
+        # This will be 0 if the current receipt is greater than or equal to current version of the script
+
+        ### Printer Install ###
+        # If the queue already exists (returns 0), we don't need to reinstall it.
+            if [ $? -eq 0 ]; then
+                    if [ $versionComparison == 0 ]; then
+                            # We are at the current or greater version
+                          exit 1
+                    fi
+
+                # We are of lesser version, and therefore we should delete the printer and reinstall.
+                    # Delete the existing Sal configuration plist
+                            rm -f /Library/Preferences/com.grahamgilbert.plist
+            fi
+
+        # Now we can install the printer.
+            # Direct client to the correct Sal server
+                        defaults write /Library/Preferences/com.grahamgilbert.sal ServerURL $address
+
+            # Set the Machine Group key for BrehmStudents
+                defaults write /Library/Preferences/com.grahamgilbert.sal key $machinegroupkey
+
+            # Create a receipt for the printer
+            mkdir -p /brehm/logs/configuration_receipts
+            /usr/libexec/PlistBuddy -c "Add :version string" /brehm/logs/configuration_receipts/$configname.plist
+            /usr/libexec/PlistBuddy -c "Set :version $currentVersion" /brehm/logs/configuration_receipts/$configname.plist
+
+        # Permission the directories properly.
+            chown -R root:admin /brehm/logs/configuration_receipts/
+            chmod -R 755 /brehm/logs/configuration_receipts/
+
+        exit 0
+    </string>
+
+    <key>uninstall_method</key>
+    <string>uninstall_script</string>
+    <key>uninstall_script</key>
+    <string>#!/bin/sh
+        configname="InstallMonitor-BrehmTechDept"
+        address="http://sal-reports.brehm.org/"
+        machinegroupkey="3pmaixcdj2oqbg5h5ftau88znil3lm7y95pnwrnkiqtf8zbnnqzn8bhtgjkzyyt9k0kaejcrhgm9atq818t7s1r8jemuk8ciazg1r5bsr26x6hqqsw2zpgn7xt1x0m7f"
+        currentVersion="0.4"
+
+        rm -f /Library/Preferences/com.grahamgilbert.sal.plist
+        rm -f /brehm/logs/configuration_receipts/InstallMonitor-BrehmTechDept.plist
+    </string>
+
+<key>uninstallable</key>
+        <true/>
+        <key>version</key>
+        <string>0.4</string>
+</dict>
+</plist>
+
+
